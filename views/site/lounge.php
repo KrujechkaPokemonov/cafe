@@ -64,81 +64,30 @@ use yii\widgets\LinkPager;
     </div>
 </section>
 
-<section class="ftco-section-2">
-    <a onclick="$('#spol').slideToggle('slow');" href="javascript://"><img src="/public/images/01234.jpg" alt=""></font></a>
-</section>
+<?php $i = 1; foreach($lounge as $section) : ?>
 
-<div id="spol" style="display:none">
     <section class="ftco-section-2">
-        <div class="container d-flex">
-            <div class="section-2-blocks-wrapper row">
-                <div class="img col-sm-12 col-lg-6" style="background-image: url('/public/images/about-1.jpg');">
-                </div>
-                <div class="text col-lg-6 ftco-animate">
-                    <div class="text-inner align-self-start">
-                        <h3 class="heading" align="center">Крыша</h3>
-                        <p align="justify"> Этот этаж для тех кто любит хорошо провести своё время на свежем воздухе и
-                            под хорошую музыку. Заказать еду и напитки вы сможете либо за барной стойкой, либо за
-                            любым другим столиком.</p>
-                        <p align="justify">Всего на этаже 5 столиков, каждый на 4 персоны.</p>
+        <a onclick="$('#spol<?php echo $i ?>').slideToggle('slow');" href="javascript://"><img src="/public/images/<?php echo $images[$i - 1]?>" alt=""></a>
+    </section>
+
+    <div id="spol<?php echo $i ?>" style="display:none">
+        <section class="ftco-section-<?php echo $i ?>">
+            <div class="container d-flex">
+                <div class="section-2-blocks-wrapper row">
+                    <div class="img col-sm-12 col-lg-6" style="background-image: url('/uploads/<?= $section->image?>');">
+                    </div>
+                    <div class="text col-lg-6 ftco-animate">
+                        <div class="text-inner align-self-start">
+                            <h3 class="heading" align="center"><?= $section->title ?></h3>
+                            <p align="justify"> <?=$section->description ?></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
 
 
-<section class="ftco-section-2">
-    <a onclick="$('#spol1').slideToggle('slow');" href="javascript://"><img src="/public/images/0234.jpg" alt=""></a>
-</section>
 
-<div id="spol1" style="display:none">
-    <section class="ftco-section-2">
-        <div class="container d-flex">
-            <div class="section-2-blocks-wrapper row">
-                <div class="text col-lg-6 ftco-animate">
-                    <div class="text-inner align-self-start">
-                        <h3 class="heading" align="center">Диваны</h3>
-                        <p align="justify"> Данный зал создан для более уютного времяпрепровождения. Например, деловые
-                            встречи, свидания или простые посиделки с друзьями. Если вам одиноко, то не переживайте,
-                            в ресторане есть много пушистых мурлыкающих друзей, которые могут вам подарить счастье.</p>
-                        <p align="justify">Также вы можете прийти со своим пушистым мурлыкающим другом и провести своё время в нашем
-                            уютном ресторане! Ваш котёнок не останется голодным, ведь у нас есть сбалансированное
-                            меню специально созданное для кошек!</p>
 
-                        <p align="justify">Всего на этаже 5 столиков, каждый на 4 персоны.</p>
-                    </div>
-                </div>
-                <div class="img col-sm-12 col-lg-6" style="background-image: url('/public/images/about-5.jpg');">
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
-
-<section class="ftco-section-2">
-    <a onclick="$('#spol2').slideToggle('slow');" href="javascript://"><img src="/public/images/0345.jpg" alt=""></a>
-</section>
-
-<div id="spol2" style="display:none">
-    <section class="ftco-section-2">
-        <div class="container d-flex">
-            <div class="section-2-blocks-wrapper row">
-                <div class="img col-sm-12 col-lg-6" style="background-image: url('/public/images/about-4.jpg');">
-                </div>
-                <div class="text col-lg-6 ftco-animate">
-                    <div class="text-inner align-self-start">
-                        <h3 class="heading" align="center">Подвал</h3>
-                        <p align="justify"> Зал для тех кто хочет расслабиться после тяжёлого дня. Здесь вы можете
-                            заказать кальян. Цена кальяна зависит от того сколько персон сидит за столом.Стартовая цена-700 рублей. За каждую персону в вашей компании доплата в
-                            размере 100 рублей за каждый час. Еду и напитки вы можете заказать за барной стойкой
-                            или за столиком.</p>
-
-                        <p align="justify">Всего на этаже 3 столика и 3 дивана, на 4 персоны.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</div>
+    <?php $i++; endforeach; ?>

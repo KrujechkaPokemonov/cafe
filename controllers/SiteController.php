@@ -133,8 +133,12 @@ class SiteController extends Controller
     public function actionLounge()
     {
         $data = Lounge ::find() -> all();
+
+        $images = ['01234.jpg', '0234.jpg', '0345.jpg'];
+
         return $this -> render('lounge', [
             'lounge' => $data,
+            'images' => $images
         ]);
     }
 
