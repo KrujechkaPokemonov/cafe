@@ -45,8 +45,8 @@ class Menu extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'id_food_and_drinks' => 'Id Food And Drinks',
-            'menu_categories' => 'Menu Categories',
-            'menu_classifications' => 'Menu Classifications',
+            'menu_categories' => 'Категории меню',
+            'menu_classifications' => 'Классификации меню',
         ];
     }
 

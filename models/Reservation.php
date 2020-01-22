@@ -52,12 +52,12 @@ class Reservation extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'id_lounge' => 'Id Lounge',
-            'name' => 'Name',
-            'phone' => 'Phone',
-            'date' => 'Date',
-            'time' => 'Time',
-            'person' => 'Person',
-            'status' => 'Status',
+            'name' => 'Имя',
+            'phone' => 'Телефон',
+            'date' => 'Дата бронирования',
+            'time' => 'Время бронирования',
+            'person' => 'Кол-во персон',
+            'status' => 'Статус',
         ];
     }
 

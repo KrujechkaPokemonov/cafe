@@ -42,8 +42,8 @@ class Foodanddrinks extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'description' => 'Description',
+            'title' => 'Название блюда или напитка',
+            'description' => 'Описание',
         ];
     }
 

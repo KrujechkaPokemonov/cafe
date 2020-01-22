@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Menu */
 
-$this->title = 'Update Menu: ' . $model->id;
-$this->params['breadcrumbs'][] = ['label' => 'Menus', 'url' => ['index']];
+$this->title = 'Обновление: ' . $model->id;
+$this->params['breadcrumbs'][] = ['label' => 'Меню', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->id, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = 'Обновление';
 ?>
 <div class="menu-update">
 

@@ -44,8 +44,8 @@ class Lounge extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'description' => 'Description',
+            'title' => 'Название',
+            'description' => 'Описание',
             'image' => 'Image',
         ];
     }
