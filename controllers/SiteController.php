@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Foodanddrinks;
 use app\models\Reservation;
 use app\models\Menu;
 use app\models\News;

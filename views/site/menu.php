@@ -55,200 +55,200 @@ use yii\widgets\LinkPager;
 <section class="ftco-section-2">
 
             <br>
-            <h4 align="right">Цены указаны в рублях</h4>
+            <h4 align="center">Цены указаны в рублях</h4>
             <br>
 
 </section>
 
 <section class="ftco-section-2">
-        <a onclick="$('#spol').slideToggle('slow');" href="javascript://"><img src="/public/images/034.jpg" alt=""></a>
+    <a onclick="$('#spol').slideToggle('slow');" href="javascript://"><img src="/public/images/034.jpg" alt=""></a>
 </section>
 
 <div id="spol" style="display:none">
-                <section class="ftco-section-2">
-                        <a onclick="$('#spol2').slideToggle('slow');" href="javascript://"><img src="/public/images/123.jpg" alt=""></a>
-                </section>
+    <section class="ftco-section-2">
+        <a onclick="$('#spol2').slideToggle('slow');" href="javascript://"><img src="/public/images/123.jpg" alt=""></a>
+    </section>
 
-                <div id="spol2" style="display:none">
+    <div id="spol2" style="display:none">
+        <section class="ftco-section-2">
+            <div class="container d-flex">
+                <div class="text col-lg-12 ftco-animate">
+
                     <section class="ftco-section-2">
-                        <div class="container d-flex">
-                            <div class="text col-lg-12 ftco-animate">
+                        <a onclick="$('#spol5').slideToggle('slow');" href="javascript://"><font color="black" size="10">Десерты</font></a>
+                    </section>
+                    <div id="spol5" style="display:none">
+                        <section class="ftco-section-2">
+                            <div class="container d-flex">
+                                <div class="text col-lg-12 ftco-animate">
+                                    <font color="black" size="5">Фирменные эклеры ресторана> 150</font>
+                                    <p>(выбери любимый вкус: черная смородина, фисташка, ваниль, карамель или манго)</p>
 
-                                <section class="ftco-section-2">
-                                    <a onclick="$('#spol5').slideToggle('slow');" href="javascript://"><font color="black" size="10">Десерты</font></a>
-                                </section>
-                                <div id="spol5" style="display:none">
-                                    <section class="ftco-section-2">
-                                        <div class="container d-flex">
-                                            <div class="text col-lg-12 ftco-animate">
-                                                <font color="black" size="5">Фирменные эклеры ресторана> 150</font>
-                                                <p>(выбери любимый вкус: черная смородина, фисташка, ваниль, карамель или манго)</p>
+                                    <font color="black" size="5">Пять эклеров с разной начинкой в специальной подарочной упаковке > 750</font><br><br>
 
-                                                <font color="black" size="5">Пять эклеров с разной начинкой в специальной подарочной упаковке > 750</font><br><br>
+                                    <font color="black" size="5">Шоколадный десерт с миндалем > 350</font>
+                                    <p>(шоколадный мусс, миндаль в мягкой карамели, шоколадный бисквит)</p>
 
-                                                <font color="black" size="5">Шоколадный десерт с миндалем > 350</font>
-                                                <p>(шоколадный мусс, миндаль в мягкой карамели, шоколадный бисквит)</p>
+                                    <font color="black" size="5">Фундучная карамель > 250</font>
+                                    <p>(шоколадный бисквит, карамельный мусс с вафельной крошкой, фундучным пралине и молочным шоколадом)</p>
 
-                                                <font color="black" size="5">Фундучная карамель > 250</font>
-                                                <p>(шоколадный бисквит, карамельный мусс с вафельной крошкой, фундучным пралине и молочным шоколадом)</p>
-
-                                                <font color="black" size="5">Мороженое (1 шарик) > 100</font>
-                                                <p>(Ванильное, клубничное, шоколадное, фисташковое)</p>
-                                        </div>
-                                        </div>
-                                    </section>
-                                </div>
-
-                                <section class="ftco-section-2">
-                                    <a onclick="$('#spol8').slideToggle('slow');" href="javascript://"><font color="black" size="10">Гарнир</font></a>
-                                </section>
-                                <div id="spol8" style="display:none">
-                                    <section class="ftco-section-2">
-                                        <div class="container d-flex">
-                                            <div class="text col-lg-12 ftco-animate">
-                                                <font color="black" size="5">Овощной рататуй > 250</font><br><br>
-
-
-                                                <font color="black" size="5">Молодой картофель с розмарином > 170</font><br><br>
-
-                                                <font color="black" size="5">Треска под цитрусовым маринадом> 350</font>
-                                                <p>(Запеченое Филе трески под цитрусовым маринадом, подается с картофельным пюре, помидором гриль и с пюре из сельдерея)</p>
-
-                                                <font color="black" size="5">Котлеты куриные с картофельным пюре > 150</font>
-                                                <p>(Подаются с соусом Тар Тар)</p>
-
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-
-                                <section class="ftco-section-2">
-                                    <a onclick="$('#spol9').slideToggle('slow');" href="javascript://"><font color="black" size="10">Супы</font></a>
-                                </section>
-                                <div id="spol9" style="display:none">
-                                    <section class="ftco-section-2">
-                                        <div class="container d-flex">
-                                            <div class="text col-lg-12 ftco-animate">
-                                                <font color="black" size="5">Суп куриный с вермишелью и фрикадельками> 370</font>
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-
-
-                                <section class="ftco-section-2">
-                                    <a onclick="$('#spol10').slideToggle('slow');" href="javascript://"><font color="black" size="10">Паста</font></a>
-                                </section>
-                                <div id="spol10" style="display:none">
-                                    <section class="ftco-section-2">
-                                        <div class="container d-flex">
-                                            <div class="text col-lg-12 ftco-animate">
-                                                <font color="black" size="5">Лапша в азиатском стиле > 250</font>
-                                                <p>(китайская лапша с овощами и тигровыми креветками)</p>
-                                            </div>
-                                        </div>
-                                    </section>
+                                    <font color="black" size="5">Мороженое (1 шарик) > 100</font>
+                                    <p>(Ванильное, клубничное, шоколадное, фисташковое)</p>
                                 </div>
                             </div>
-                        </div>
-                    </section>
-                </div>
+                        </section>
+                    </div>
 
-
-                <section class="ftco-section-2">
-                    <a onclick="$('#spol3').slideToggle('slow');" href="javascript://"><img src="/public/images/234.jpg" alt=""></a>
-                </section>
-                <div id="spol3" style="display:none">
                     <section class="ftco-section-2">
-                        <div class="container d-flex">
-                            <div class="text col-lg-12 ftco-animate">
-                                <section class="ftco-section-2">
-                                    <a onclick="$('#spol11').slideToggle('slow');" href="javascript://"><font color="black" size="10">Коктейли</font></a>
-                                </section>
-                                <div id="spol11" style="display:none">
-                                    <section class="ftco-section-2">
-                                        <div class="container d-flex">
-                                            <div class="text col-lg-12 ftco-animate">
-                                                <font color="black" size="5">Глинтвейн 200 мл.> 150</font><br><br>
-
-                                                <font color="black" size="5">Мохито 300 мл.> 250</font>
-                                                <p>(Белый ром, сок лайма, мята, сироп, содовая)</p>
-
-                                                <font color="black" size="5">Маргарита Классическая 130 мл.> 300</font>
-                                                <p>(Текила, Куантро, лаймовый сок)</p>
-
-                                                <font color="black" size="5">Пина колада 300 мл.> 250</font>
-                                                <p>(Ром светлый, кокосовый сироп, ананасовый сок))</p>
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-
-                                <section class="ftco-section-2">
-                                    <a onclick="$('#spol12').slideToggle('slow');" href="javascript://"><font color="black" size="10">Ликёры</font></a>
-                                </section>
-                                <div id="spol12" style="display:none">
-                                    <section class="ftco-section-2">
-                                        <div class="container d-flex">
-                                            <div class="text col-lg-12 ftco-animate">
-                                                <font color="black" size="5">Baileys 1000 / 50 мл.> 3500 / 180 </font><br><br>
+                        <a onclick="$('#spol8').slideToggle('slow');" href="javascript://"><font color="black" size="10">Гарнир</font></a>
+                    </section>
+                    <div id="spol8" style="display:none">
+                        <section class="ftco-section-2">
+                            <div class="container d-flex">
+                                <div class="text col-lg-12 ftco-animate">
+                                    <font color="black" size="5">Овощной рататуй > 250</font><br><br>
 
 
+                                    <font color="black" size="5">Молодой картофель с розмарином > 170</font><br><br>
 
-                                                <font color="black" size="5">Cointreau 1000 / 50 мл.> 3200 / 160</font>
+                                    <font color="black" size="5">Треска под цитрусовым маринадом> 350</font>
+                                    <p>(Запеченое Филе трески под цитрусовым маринадом, подается с картофельным пюре, помидором гриль и с пюре из сельдерея)</p>
 
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
+                                    <font color="black" size="5">Котлеты куриные с картофельным пюре > 150</font>
+                                    <p>(Подаются с соусом Тар Тар)</p>
 
-                                <section class="ftco-section-2">
-                                    <a onclick="$('#spol13').slideToggle('slow');" href="javascript://"><font color="black" size="10">Ром</font></a>
-                                </section>
-                                <div id="spol13" style="display:none">
-                                    <section class="ftco-section-2">
-                                        <div class="container d-flex">
-                                            <div class="text col-lg-12 ftco-animate">
-                                                <font color="black" size="5">Бакарди Оакхарт Пряный 1000 / 50 мл.> 3300 / 170 </font>
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-
-
-                                <section class="ftco-section-2">
-                                    <a onclick="$('#spol14').slideToggle('slow');" href="javascript://"><font color="black" size="10">Текила</font></a>
-                                </section>
-                                <div id="spol14" style="display:none">
-                                    <section class="ftco-section-2">
-                                        <div class="container d-flex">
-                                            <div class="text col-lg-12 ftco-animate">
-                                                <font color="black" size="5">Камино Реал Бланко 700 / 50 мл.>  3050 / 220</font><br><br>
-
-                                                <font color="black" size="5">Кампо Азул Эспесьял бланко 1000 / 50 мл.> 3200 / 170</font>
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-
-                                <section class="ftco-section-2">
-                                    <a onclick="$('#spol15').slideToggle('slow');" href="javascript://"><font color="black" size="10">Коньяк</font></a>
-                                </section>
-                                <div id="spol15" style="display:none">
-                                    <section class="ftco-section-2">
-                                        <div class="container d-flex">
-                                            <div class="text col-lg-12 ftco-animate">
-                                                <font color="black" size="5">Хеннесси 700 / 50 мл.> 8850 / 640</font><br><br>
-
-                                                <font color="black" size="5">Курвуазье 700 / 50 мл.> 7200 / 520</font>
-                                            </div>
-                                        </div>
-                                    </section>
                                 </div>
                             </div>
-                        </div>
+                        </section>
+                    </div>
+
+                    <section class="ftco-section-2">
+                        <a onclick="$('#spol9').slideToggle('slow');" href="javascript://"><font color="black" size="10">Супы</font></a>
                     </section>
+                    <div id="spol9" style="display:none">
+                        <section class="ftco-section-2">
+                            <div class="container d-flex">
+                                <div class="text col-lg-12 ftco-animate">
+                                    <font color="black" size="5">Суп куриный с вермишелью и фрикадельками> 370</font>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+
+                    <section class="ftco-section-2">
+                        <a onclick="$('#spol10').slideToggle('slow');" href="javascript://"><font color="black" size="10">Паста</font></a>
+                    </section>
+                    <div id="spol10" style="display:none">
+                        <section class="ftco-section-2">
+                            <div class="container d-flex">
+                                <div class="text col-lg-12 ftco-animate">
+                                    <font color="black" size="5">Лапша в азиатском стиле > 250</font>
+                                    <p>(китайская лапша с овощами и тигровыми креветками)</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="ftco-section-2">
+        <a onclick="$('#spol3').slideToggle('slow');" href="javascript://"><img src="/public/images/234.jpg" alt=""></a>
+    </section>
+    <div id="spol3" style="display:none">
+        <section class="ftco-section-2">
+            <div class="container d-flex">
+                <div class="text col-lg-12 ftco-animate">
+                    <section class="ftco-section-2">
+                        <a onclick="$('#spol11').slideToggle('slow');" href="javascript://"><font color="black" size="10">Коктейли</font></a>
+                    </section>
+                    <div id="spol11" style="display:none">
+                        <section class="ftco-section-2">
+                            <div class="container d-flex">
+                                <div class="text col-lg-12 ftco-animate">
+                                    <font color="black" size="5">Глинтвейн 200 мл.> 150</font><br><br>
+
+                                    <font color="black" size="5">Мохито 300 мл.> 250</font>
+                                    <p>(Белый ром, сок лайма, мята, сироп, содовая)</p>
+
+                                    <font color="black" size="5">Маргарита Классическая 130 мл.> 300</font>
+                                    <p>(Текила, Куантро, лаймовый сок)</p>
+
+                                    <font color="black" size="5">Пина колада 300 мл.> 250</font>
+                                    <p>(Ром светлый, кокосовый сироп, ананасовый сок))</p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <section class="ftco-section-2">
+                        <a onclick="$('#spol12').slideToggle('slow');" href="javascript://"><font color="black" size="10">Ликёры</font></a>
+                    </section>
+                    <div id="spol12" style="display:none">
+                        <section class="ftco-section-2">
+                            <div class="container d-flex">
+                                <div class="text col-lg-12 ftco-animate">
+                                    <font color="black" size="5">Baileys 1000 / 50 мл.> 3500 / 180 </font><br><br>
+
+
+
+                                    <font color="black" size="5">Cointreau 1000 / 50 мл.> 3200 / 160</font>
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <section class="ftco-section-2">
+                        <a onclick="$('#spol13').slideToggle('slow');" href="javascript://"><font color="black" size="10">Ром</font></a>
+                    </section>
+                    <div id="spol13" style="display:none">
+                        <section class="ftco-section-2">
+                            <div class="container d-flex">
+                                <div class="text col-lg-12 ftco-animate">
+                                    <font color="black" size="5">Бакарди Оакхарт Пряный 1000 / 50 мл.> 3300 / 170 </font>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+
+                    <section class="ftco-section-2">
+                        <a onclick="$('#spol14').slideToggle('slow');" href="javascript://"><font color="black" size="10">Текила</font></a>
+                    </section>
+                    <div id="spol14" style="display:none">
+                        <section class="ftco-section-2">
+                            <div class="container d-flex">
+                                <div class="text col-lg-12 ftco-animate">
+                                    <font color="black" size="5">Камино Реал Бланко 700 / 50 мл.>  3050 / 220</font><br><br>
+
+                                    <font color="black" size="5">Кампо Азул Эспесьял бланко 1000 / 50 мл.> 3200 / 170</font>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <section class="ftco-section-2">
+                        <a onclick="$('#spol15').slideToggle('slow');" href="javascript://"><font color="black" size="10">Коньяк</font></a>
+                    </section>
+                    <div id="spol15" style="display:none">
+                        <section class="ftco-section-2">
+                            <div class="container d-flex">
+                                <div class="text col-lg-12 ftco-animate">
+                                    <font color="black" size="5">Хеннесси 700 / 50 мл.> 8850 / 640</font><br><br>
+
+                                    <font color="black" size="5">Курвуазье 700 / 50 мл.> 7200 / 520</font>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <section class="ftco-section-2">
         <a onclick="$('#spol6').slideToggle('slow');" href="javascript://"><img src="/public/images/067.jpg" alt=""></a>
@@ -335,6 +335,7 @@ use yii\widgets\LinkPager;
     </div>
 
 </div>
+
 
 <section class="ftco-section-2">
         <a onclick="$('#spol1').slideToggle('slow');" href="javascript://"><img src="/public/images/056.jpg" alt=""></a>
