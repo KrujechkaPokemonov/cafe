@@ -153,8 +153,12 @@ class SiteController extends Controller
     public function actionMenu()
     {
         $data = Menu ::find() -> all();
+
+        $images = ['123.jpg', '234.jpg', '067.jpg'];
+
         return $this -> render('menu', [
             'menu' => $data,
+            'images' => $images
         ]);
     }
 }

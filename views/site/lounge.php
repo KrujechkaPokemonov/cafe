@@ -71,7 +71,7 @@ use yii\widgets\LinkPager;
     </section>
 
     <div id="spol<?php echo $i ?>" style="display:none">
-        <section class="ftco-section-<?php echo $i ?>">
+        <section class="ftco-section-2">
             <div class="container d-flex">
                 <div class="section-2-blocks-wrapper row">
                     <div class="img col-sm-12 col-lg-6" style="background-image: url('/uploads/<?= $section->image?>');">

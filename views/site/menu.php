@@ -169,15 +169,15 @@ use yii\widgets\LinkPager;
                                     <section class="ftco-section-2">
                                         <div class="container d-flex">
                                             <div class="text col-lg-12 ftco-animate">
-                                                <font color="black" size="5">Глинтвейн 200 мл.> 350</font><br><br>
+                                                <font color="black" size="5">Глинтвейн 200 мл.> 150</font><br><br>
 
-                                                <font color="black" size="5">Мохито 300 мл.> 400</font>
+                                                <font color="black" size="5">Мохито 300 мл.> 250</font>
                                                 <p>(Белый ром, сок лайма, мята, сироп, содовая)</p>
 
                                                 <font color="black" size="5">Маргарита Классическая 130 мл.> 300</font>
                                                 <p>(Текила, Куантро, лаймовый сок)</p>
 
-                                                <font color="black" size="5">Пина колада 300 мл.> 550</font>
+                                                <font color="black" size="5">Пина колада 300 мл.> 250</font>
                                                 <p>(Ром светлый, кокосовый сироп, ананасовый сок))</p>
                                             </div>
                                         </div>
@@ -191,9 +191,11 @@ use yii\widgets\LinkPager;
                                     <section class="ftco-section-2">
                                         <div class="container d-flex">
                                             <div class="text col-lg-12 ftco-animate">
-                                                <font color="black" size="5">Бейлиз 1000 / 50 мл.> 3500 / 180 </font><br><br>
+                                                <font color="black" size="5">Baileys 1000 / 50 мл.> 3500 / 180 </font><br><br>
 
-                                                <font color="black" size="5">Куантро 1000 / 50 мл.> 3200 / 160</font>
+
+
+                                                <font color="black" size="5">Cointreau 1000 / 50 мл.> 3200 / 160</font>
 
                                             </div>
                                         </div>
@@ -262,17 +264,19 @@ use yii\widgets\LinkPager;
                         <section class="ftco-section-2">
                             <div class="container d-flex">
                                 <div class="text col-lg-12 ftco-animate">
-                                    <font color="black" size="5">Апельсиновый 200 мл.> 350</font><br><br>
+                                    <font color="black" size="5">Апельсиновый 200 мл.> 100</font><br><br>
 
-                                    <font color="black" size="5">Грейпфрутовый 200 мл.> 350 </font><br><br>
+                                    <font color="black" size="5">Грейпфрутовый 200 мл.> 100 </font><br><br>
 
-                                    <font color="black" size="5">Апельсиново-грейпфрутовый 200 мл.> 350</font><br><br>
+                                    <font color="black" size="5">Апельсиново-грейпфрутовый 200 мл.> 100</font><br><br>
 
-                                    <font color="black" size="5">Яблочный 200 мл.> 350</font><br><br>
+                                    <font color="black" size="5">Яблочный 200 мл.> 100</font><br><br>
 
-                                    <font color="black" size="5">Яблочно-морковный 200 мл.> 350</font><br><br>
+                                    <font color="black" size="5">Яблочно-морковный 200 мл.> 100</font><br><br>
 
-                                    <font color="black" size="5">Ананасовый 200 мл.> 350 </font>
+                                    <font color="black" size="5">Морковный 200 мл.> 100</font><br><br>
+
+                                    <font color="black" size="5">Ананасовый 200 мл.> 100 </font>
                                 </div>
                             </div>
                         </section>
@@ -285,22 +289,25 @@ use yii\widgets\LinkPager;
                         <section class="ftco-section-2">
                             <div class="container d-flex">
                                 <div class="text col-lg-12 ftco-animate">
-                                    <font color="black" size="5">Эспрессо 40 мл.> 220</font><br><br>
+                                    <font color="black" size="5">Эспрессо 40 мл.> 180</font><br><br>
 
-                                    <font color="black" size="5">Двойной эспрессо 80 мл.> 280</font><br><br>
+                                    <font color="black" size="5">Двойной эспрессо 80 мл.> 200</font><br><br>
 
-                                    <font color="black" size="5">Американо 200 мл.> 220</font><br><br>
+                                    <font color="black" size="5">Американо 200 мл.> 195</font><br><br>
 
-                                    <font color="black" size="5">Каппучино 200 мл.> 280</font><br><br>
+                                    <font color="black" size="5">Каппучино 200 мл.> 210</font><br><br>
 
-                                    <font color="black" size="5">Двойной Каппучино 240 мл.> 330</font><br><br>
+                                    <font color="black" size="5">Большой каппучино 240 мл.> 250</font><br><br>
 
-                                    <font color="black" size="5">Латте 250 мл.> 280</font><br><br>
+                                    <font color="black" size="5">Латте 250 мл.> 210</font><br><br>
 
-                                    <font color="black" size="5">Кофе Гляссе 240 мл.>  300</font>
+                                    <font color="black" size="5">Кофе Гляссе 240 мл.>  200</font>
                                     <p>(Эспрессо с молоком и ванильным мороженым) </p>
 
-                                    <font color="black" size="5">Какао 220 мл.>  290</font>
+                                    <font color="black" size="5">Какао 220 мл.>  230</font><br><br>
+
+                                    <font color="black" size="5">Бамбл 300 мл.>  240</font>
+                                    <p>(Карамельный сироп, эспрессо и холодный апельсиновый сок. Лёд по вкусу) </p>
                                 </div>
                             </div>
                         </section>
@@ -313,10 +320,10 @@ use yii\widgets\LinkPager;
                         <section class="ftco-section-2">
                             <div class="container d-flex">
                                 <div class="text col-lg-12 ftco-animate">
-                                    <font color="black" size="5">Лесные ягоды 500 мл.> 490</font>
+                                    <font color="black" size="5">Лесные ягоды 500 мл.> 200</font>
                                     <p>(Пюре смородины, апельсиновый сок, сироп ежевика) </p>
 
-                                    <font color="black" size="5">Восточные пряности 500 мл.> 490</font>
+                                    <font color="black" size="5">Восточные пряности 500 мл.> 200</font>
                                     <p>(Апельсин, лайм, мед, мята, корица, гвоздика) </p>
                                 </div>
                             </div>
