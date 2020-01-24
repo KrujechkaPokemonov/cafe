@@ -7267,10 +7267,10 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #ffb400; }
+  color: rgba(84, 84, 84, 0.73); }
   a:hover {
     text-decoration: none;
-    color: #ffb400; }
+    color: #ffe800; }
 
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {

@@ -39,8 +39,7 @@ AppAsset::register($this);
         'options' => ['class' => 'navbar-nav navbar-right'],
         'items' => [
             ['label' => 'Новости', 'url' => ['/admin/news/index']],
-            ['label' => 'Меню', 'url' => ['/admin/menu/index']],
-            ['label' => 'Еда и напитки', 'url' => ['/admin/foodanddrinks/index']],
+            ['label' => 'Меню', 'url' => ['/admin/menuitems/index']],
             ['label' => 'Залы', 'url' => ['/admin/lounge/index']],
             ['label' => 'Брони', 'url' => ['/admin/reservation/index']],
 Yii::$app->user->isGuest ? (

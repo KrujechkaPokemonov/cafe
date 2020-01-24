@@ -43,7 +43,7 @@ PublicAsset::register($this);
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active"><?= Html::a('Главная', ['/'], ['class' => 'nav-link']) ?></li>
-                <li class="nav-item"><?= Html::a('Меню', ['/site/menu'], ['class' => 'nav-link']) ?></li>
+                <li class="nav-item"><?= Html::a('Меню', ['/site/test'], ['class' => 'nav-link']) ?></li>
                 <li class="nav-item"><?= Html::a('Бронирование', ['/site/reservation'], ['class' => 'nav-link']) ?></li>
                 <li class="nav-item"><?= Html::a('Залы', ['/site/lounge'], ['class' => 'nav-link']) ?></li>
             </ul>

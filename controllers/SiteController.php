@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Foodanddrinks;
+use app\models\Menuitems;
 use app\models\Reservation;
 use app\models\Menu;
 use app\models\News;
@@ -160,6 +161,17 @@ class SiteController extends Controller
         return $this -> render('menu', [
             'menu' => $data,
             'images' => $images
+        ]);
+    }
+
+    public function actionTest()
+    {
+        $data = Menuitems::findALL(['parent' => null]);
+
+//        var_dump($data);die();
+
+        return $this -> render('test', [
+            'menu' => $data,
         ]);
     }
 }
