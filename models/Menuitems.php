@@ -43,8 +43,8 @@ class Menuitems extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'parent' => 'Parent',
+            'name' => 'Название',
+            'parent' => 'Родитель',
         ];
     }
 
