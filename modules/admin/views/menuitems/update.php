@@ -1,5 +1,6 @@
 <?php
 
+use app\models\Menuitems;
 use yii\helpers\Html;
 
 /* @var $this yii\web\View */

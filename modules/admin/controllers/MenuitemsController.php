@@ -93,6 +93,7 @@ class MenuitemsController extends Controller
         return $this->render('update', [
             'model' => $model,
         ]);
+
     }
 
     /**

@@ -22,6 +22,12 @@ AppAsset::register($this);
     <?php $this->registerCsrfMetaTags() ?>
     <title>KissKiss</title>
     <?php $this->head() ?>
+
+    <!-- favicon icon -->
+    <link rel="shortcut icon" href="/public/images/index.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/public/images/favicon.png">
 </head>
 <body>
 <?php $this->beginBody() ?>
