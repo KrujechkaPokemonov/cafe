@@ -8,7 +8,7 @@ use yii\helpers\Html;
 $this->title = 'Обновление: ' . $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Запросы на бронирование', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Обновление';
+$this->params['breadcrumbs'][] = 'Обновление запроса';
 ?>
 <div class="reservation-update">
 

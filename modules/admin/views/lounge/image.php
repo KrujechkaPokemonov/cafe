@@ -16,7 +16,7 @@ use yii\widgets\ActiveForm;
 
 
     <div class="form-group">
-        <?= Html::submitButton('Загрузить', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Загрузить картинку', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
