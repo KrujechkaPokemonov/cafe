@@ -106,7 +106,7 @@ PublicAsset::register($this);
             <div class="col-md">
                 <div class="ftco-footer-widget mb-4">
                     <h2 class="ftco-heading-2">Новостные рассылки</h2>
-                    <p>Подпишитесь на наши рассылки, чтобы знать о новостях ресторана.</p>
+                    <p>Подпишитесь на наши рассылки, чтобы знать о новостях и акциях ресторана.</p>
                     <form action="#" class="subscribe-form">
                         <div class="form-group">
                             <span class="icon icon-paper-plane"></span>
