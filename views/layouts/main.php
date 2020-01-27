@@ -123,7 +123,7 @@ PublicAsset::register($this);
                     Copyright &copy;<script>document.write(new Date().getFullYear());</script>
                     All rights reserved | With <i class="icon-heart" aria-hidden="true">
 
-                    </i> by <a href="/" target="_blank">Krujka_Pokemon</a>
+                    </i> by <a href="https://vk.com/krujka_pokemon" target="_blank">Krujka_Pokemon</a>
                 </p>
             </div>
         </div>
