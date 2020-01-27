@@ -9,6 +9,7 @@ use app\models\Menu;
 use app\models\News;
 use app\models\Lounge;
 use Yii;
+use yii\debug\panels\DumpPanel;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\Response;
@@ -144,11 +145,51 @@ class SiteController extends Controller
         ]);
     }
 
+
+    /**
+     * КСТАТИ
+     *
+     *
+     *
+     *
+     * Самое норм для тебя это сделать 3 модуля для разных групп пользователей
+     */
     public function actionReservation()
     {
+        //если форма отправлена
+        if(Yii::$app->request->isPost )
+        {
+            $reservation = new Reservation();
+            //загружаем то что пришло из формы (смотри форму /views/reservation.php )
+            $reservation->load(Yii::$app->request->post());
+
+            //эта функция вместо var_dump() описана в /web/index.php
+            //она нужна для дебага
+            dd($reservation);
+
+            //если провалидировалось
+            if($reservation->validate())
+            {
+                $reservation->save();
+
+                //если  все норм верни что-то типа 'Успешно!!!'
+                Yii::$app->session->setFlash('reservation-status', true);
+            } else {
+                //если нет то неуспешно ((
+                Yii::$app->session->setFlash('reservation-status', false);
+            }
+
+        }
+
         $data = Reservation ::find() -> all();
+        $lounge = Lounge ::find() -> all();
+
+        // это для теста представления. Удоли это
+        Yii::$app->session->setFlash('reservation-status', true);
+
         return $this -> render('reservation', [
             'reservation' => $data,
+            'lounges' => $lounge
         ]);
     }
 
