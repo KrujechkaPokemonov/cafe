@@ -165,7 +165,7 @@ class SiteController extends Controller
 
             //эта функция вместо var_dump() описана в /web/index.php
             //она нужна для дебага
-            dd($reservation);
+
 
             //если провалидировалось
             if($reservation->validate())
@@ -183,9 +183,6 @@ class SiteController extends Controller
 
         $data = Reservation ::find() -> all();
         $lounge = Lounge ::find() -> all();
-
-        // это для теста представления. Удоли это
-        Yii::$app->session->setFlash('reservation-status', true);
 
         return $this -> render('reservation', [
             'reservation' => $data,
