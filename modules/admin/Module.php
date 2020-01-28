@@ -15,7 +15,7 @@ class Module extends \yii\base\Module
      */
 
 
-    public $layout = '/ladmin';
+    public $layout = '/admin';
 
     public $controllerNamespace = 'app\modules\admin\controllers';
 
