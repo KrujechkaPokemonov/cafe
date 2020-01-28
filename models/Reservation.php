@@ -51,7 +51,7 @@ class Reservation extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'id_lounge' => 'Id Lounge',
+            'id_lounge' => 'Зал',
             'name' => 'Имя',
             'phone' => 'Телефон',
             'date' => 'Дата бронирования',

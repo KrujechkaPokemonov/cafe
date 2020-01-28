@@ -15,11 +15,11 @@ use yii\widgets\LinkPager;
         <?php if(Yii::$app->session->hasFlash('reservation-status')):?>
             <?php if(Yii::$app->session->getFlash('reservation-status')):?>
                 <div class="alert alert-success">
-                    Все хорошо. Вы забронировали (это все для теста)
+                    Запрос на бронирование отправлен успешно. Ожидайте звонок от модератора сайта!
                 </div>
             <?php else: ?>
                 <div class="alert alert-danger">
-                    Все плохо
+                    Запрос на бронирование не отправлен! Проверьте своё подключение к сети или повторите запрос позднее!
                 </div>
             <?php endif; ?>
         <?php endif; ?>
