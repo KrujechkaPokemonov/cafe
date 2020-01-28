@@ -42,6 +42,7 @@ class PublicAsset extends AssetBundle
     "https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false",
     "public/js/google-map.js",
     "public/js/main.js",
+    "public/js/jquery.maskedinput.min.js",
     ];
     public $depends = [
 

@@ -15,11 +15,11 @@ use yii\widgets\LinkPager;
         <?php if(Yii::$app->session->hasFlash('reservation-status')):?>
             <?php if(Yii::$app->session->getFlash('reservation-status')):?>
                 <div class="alert alert-success">
-                    Запрос на бронирование отправлен успешно. Ожидайте звонок от модератора сайта!
+                    Запрос на бронирование отправлен успешно. Ожидайте звонка от модератора сайта!
                 </div>
             <?php else: ?>
                 <div class="alert alert-danger">
-                    Запрос на бронирование не отправлен! Проверьте своё подключение к сети или повторите запрос позднее!
+                    Запрос на бронирование не отправлен! Проверьте своё подключение к сети или попробуйте позднее.
                 </div>
             <?php endif; ?>
         <?php endif; ?>
@@ -52,7 +52,7 @@ use yii\widgets\LinkPager;
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="">Телефон</label>
-                                <input type="text" name="Reservation[phone]" class="form-control" placeholder="Введите телефон">
+                                <input type="text" id="phone" name="Reservation[phone]" class="form-control" placeholder="Введите телефон">
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -64,7 +64,22 @@ use yii\widgets\LinkPager;
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="">Время</label>
-                                <input type="text" class="form-control" name="Reservation[time]" id="book_time" placeholder="Выберите время">
+                                <div class="select-wrap one-third">
+                                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                    <select  id="" class="form-control" name="Reservation[time]">
+                                        <option value="1">Выберите время</option>
+                                        <option value="12:00">12:00</option>
+                                        <option value="13:00">13:00</option>
+                                        <option value="14:00">14:00</option>
+                                        <option value="15:00">15:00</option>
+                                        <option value="16:00">16:00</option>
+                                        <option value="17:00">17:00</option>
+                                        <option value="18:00">18:00</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="21:00">21:00</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -92,3 +107,12 @@ use yii\widgets\LinkPager;
         </div>
     </div>
 </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $("#phone").mask("8 (999) 999-99-99");
+    });
+</script>

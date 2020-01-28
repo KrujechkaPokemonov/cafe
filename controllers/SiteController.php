@@ -2,6 +2,7 @@
 
 namespace app\controllers;
 
+use app\models\Administrator;
 use app\models\Foodanddrinks;
 use app\models\Menuitems;
 use app\models\Reservation;
@@ -129,8 +130,6 @@ class SiteController extends Controller
         return $this -> render('index', [
             'articles' => $article,
         ]);
-
-
     }
 
     public function actionLounge()
@@ -210,6 +209,14 @@ class SiteController extends Controller
 
         return $this -> render('test', [
             'menu' => $data,
+        ]);
+    }
+
+    public function actionVhod()
+    {
+        $article = Administrator ::find() -> all();
+        return $this -> render('ladmin', [
+            'articles' => $article,
         ]);
     }
 }

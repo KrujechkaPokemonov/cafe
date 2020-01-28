@@ -56,7 +56,7 @@ use yii\widgets\LinkPager;
 <section class="ftco-section-2">
     <div class="container d-flex">
         <div class="section-2-blocks-wrapper row">
-            <div class="img col-sm-12 col-lg-6" style="background-image: url('public/images/about-2.jpg');">
+            <div class="img col-sm-12 col-lg-6" style="background-image: url('public/images/about-6.jpg');">
             </div>
             <div class="text col-lg-6 ftco-animate">
                 <div class="text-inner align-self-start">
@@ -94,7 +94,7 @@ use yii\widgets\LinkPager;
                         сбалансированное меню, блюда которого можно отведать только в «KissKiss».</p>
                 </div>
             </div>
-            <div class="img col-sm-12 col-lg-6" style="background-image: url('public/images/about-3.jpg');">
+            <div class="img col-sm-12 col-lg-6" style="background-image: url('public/images/about-7.jpg');">
             </div>
         </div>
 </section>
