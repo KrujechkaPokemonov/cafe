@@ -30,6 +30,7 @@ class News extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['title'], 'required'],
             [['title', 'image'], 'string', 'max' => 255],
         ];
     }
@@ -42,7 +43,7 @@ class News extends \yii\db\ActiveRecord
         return [
             'id' => 'ID',
             'title' => 'Название',
-            'image' => 'Image',
+            'image' => 'Картинка',
         ];
     }
 

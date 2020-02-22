@@ -30,6 +30,7 @@ class Menuitems extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['name'], 'required'],
             [['parent'], 'integer'],
             [['name'], 'string', 'max' => 255],
             [['parent'], 'exist', 'skipOnError' => true, 'targetClass' => Menuitems::className(), 'targetAttribute' => ['parent' => 'id']],

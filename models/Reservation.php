@@ -35,9 +35,9 @@ class Reservation extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['id_lounge', 'name', 'phone', 'date', 'time', 'person'], 'required'],
             [['id_lounge'], 'integer'],
-            [['date', 'time'], 'safe'],
-            [['name', 'phone'], 'string', 'max' => 255],
+            [['name', 'phone', 'date', 'time'], 'string', 'max' => 255],
             [['person'], 'string', 'max' => 4],
             [['status'], 'string', 'max' => 50],
             [['id_lounge'], 'exist', 'skipOnError' => true, 'targetClass' => Lounge::className(), 'targetAttribute' => ['id_lounge' => 'id']],

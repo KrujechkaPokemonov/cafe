@@ -32,6 +32,7 @@ class Lounge extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['title', 'description'], 'required'],
             [['description'], 'string'],
             [['title', 'image'], 'string', 'max' => 255],
         ];
@@ -46,7 +47,7 @@ class Lounge extends \yii\db\ActiveRecord
             'id' => 'ID',
             'title' => 'Название',
             'description' => 'Описание',
-            'image' => 'Image',
+            'image' => 'Картинка',
         ];
     }
 

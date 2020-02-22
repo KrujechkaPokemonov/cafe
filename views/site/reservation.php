@@ -19,7 +19,7 @@ use yii\widgets\LinkPager;
                 </div>
             <?php else: ?>
                 <div class="alert alert-danger">
-                    Запрос на бронирование не отправлен! Проверьте своё подключение к сети или попробуйте позднее.
+                    Запрос на бронирование не отправлен! <br>Вы не заполнили все поля! Заполните все поля и попробуйте отправить запрос ещё раз.<br>Если поля были заполнены, а ошибка всё равно появилась проверьте подключение к сети или попробуйте отправку запроса позднее!
                 </div>
             <?php endif; ?>
         <?php endif; ?>
@@ -64,22 +64,7 @@ use yii\widgets\LinkPager;
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="">Время</label>
-                                <div class="select-wrap one-third">
-                                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                    <select  id="" class="form-control" name="Reservation[time]">
-                                        <option value="1">Выберите время</option>
-                                        <option value="12:00">12:00</option>
-                                        <option value="13:00">13:00</option>
-                                        <option value="14:00">14:00</option>
-                                        <option value="15:00">15:00</option>
-                                        <option value="16:00">16:00</option>
-                                        <option value="17:00">17:00</option>
-                                        <option value="18:00">18:00</option>
-                                        <option value="19:00">19:00</option>
-                                        <option value="20:00">20:00</option>
-                                        <option value="21:00">21:00</option>
-                                    </select>
-                                </div>
+                                <input type="text" class="form-control" name="Reservation[time]" id="book_time" placeholder="Выберите время">
                             </div>
                         </div>
                         <div class="col-md-6">
