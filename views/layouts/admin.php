@@ -34,8 +34,33 @@ AppAsset::register($this);
 
 <div class="wrap">
     <?php
+    $items=[];
+    if (Yii::$app->user->isGuest){
+        $items[0]=['label' => 'Вход', 'url' => ['/site/login']];
+    } else{
+        $items[0]= '<li>'
+            . Html::beginForm(['/site/logout'], 'post')
+            . Html::submitButton(
+                'Выход (' . Yii::$app->user->identity->username . ')',
+                ['class' => 'btn btn-link logout']
+            )
+            . Html::endForm()
+            . '</li>';
+
+        if (Yii::$app->user->identity->isadmin){
+            $items[1]=['label' => 'Пользователи', 'url' => ['/admin/users/index']];
+            $items[3]=['label' => 'Меню', 'url' => ['/admin/menuitems/index']];
+            $items[5]=['label' => 'Залы', 'url' => ['/admin/lounge/index']];
+        }else if (Yii::$app->user->identity->ismoder){
+            $items[1]=['label' => 'Бронирование', 'url' => ['/admin/reservation/index']];
+        }
+        else if (Yii::$app->user->identity->isnews){
+            $items[1]=['label' => 'Новости', 'url' => ['/admin/news/index']];
+        }
+    };
+
+
     NavBar::begin([
-        'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
@@ -43,24 +68,7 @@ AppAsset::register($this);
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Новости', 'url' => ['/admin/news/index']],
-            ['label' => 'Меню', 'url' => ['/admin/menuitems/index']],
-            ['label' => 'Залы', 'url' => ['/admin/lounge/index']],
-            ['label' => 'Брони', 'url' => ['/admin/reservation/index']],
-            Yii::$app->user->isGuest ? (
-            ['label' => '', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
-                . Html::submitButton(
-                    'Выйти (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
-        ],
+        'items' => $items,
     ]);
     NavBar::end();
     ?>
