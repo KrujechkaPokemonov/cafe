@@ -3,15 +3,15 @@ use yii\helpers\Url;
 use yii\widgets\LinkPager;
 ?>
 
-    <section class="home-slider owl-carousel img" style="background-image: url(/public/images/fon-1.jpg);">
+    <section class="home-slider owl-carousel img" style="background-image: url(/public/images/fon-3.jpg);">
         <div class="slider-item">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row slider-text align-items-center" data-scrollax-parent="true">
 
-                    <div class="col-md-7 col-sm-12 ftco-animate">
-                        <h1 class="mb-4">KissKiss</h1>
-                        <h2 class="mb-4">Залы ресторана</h2>
+                    <div class="col-md-12 text-center heading-section ftco-animate">
+                        <h1>KissKiss</h1>
+                        <h2>Залы ресторана</h2>
                         <p><a href="/site/reservation" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Забронировать столик</a></p>
                     </div>
                 </div>

@@ -9,9 +9,9 @@ use yii\widgets\LinkPager;
         <div class="container">
             <div class="row slider-text align-items-center" data-scrollax-parent="true">
 
-                <div class="col-md-7 col-sm-12 ftco-animate">
-                    <h1 class="mb-4">KissKiss</h1>
-                    <p><a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Забронировать столик</a></p>
+                <div class="col-md-12 text-center heading-section ftco-animate">
+                    <h1>KissKiss</h1>
+                    <p><a href="/site/reservation" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Забронировать столик</a></p>
                 </div>
             </div>
         </div>
@@ -111,31 +111,27 @@ use yii\widgets\LinkPager;
     </div>
 </section>
 
-<!-- Reklama -->
-<section class="ftco-section bg-light">
+<section class="ftco-section">
     <div class="container">
-        <div class="row justify-content-center mb-5 pb-5">
-            <div class="col-md-7 text-center heading-section ftco-animate">
-                <h2>Новости</h2>
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section ftco-animate text-center">
+                <h2 class="mb-4">Новости ресторана</h2>
             </div>
         </div>
-        <div class="row ftco-animate">
-            <div class="carousel1 owl-carousel ftco-owl">
-                <?php foreach($articles as $article):?>
-                <div class="item">
-                    <div class="blog-entry">
-                        <a href="/" class="block-20");">
-                            <img src="<?= $article->getImage();?>" alt="">
-                        </a>
-                        <div class="text p-4">
-                            <h3 class="heading"><?= $article->title?></a></h3>
-                        </div>
+        <div class="row d-flex">
+            <?php foreach($articles as $article):?>
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry align-self-stretch ">
+                    <img src="<?= $article->getImage();?>" alt="">
+                    <div class="text py-4 d-block">
+                        <h3 class="heading mt-2"></h3>
+                        <font color="white" size="4"><p><?= $article->title?></p></font>
                     </div>
                 </div>
-                <?php endforeach; ?>
             </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
-<!--END Reklama -->
-<!-- loader -->
+
+

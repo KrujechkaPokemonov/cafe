@@ -5,9 +5,9 @@
         <div class="container">
             <div class="row slider-text align-items-center" data-scrollax-parent="true">
 
-                <div class="col-md-7 col-sm-12 ftco-animate">
-                    <h1 class="mb-4">KissKiss</h1>
-                    <h2 class="mb-4">Меню ресторана</h2>
+                <div class="col-md-12 text-center heading-section ftco-animate">
+                    <h1>KissKiss</h1>
+                    <h2>Меню ресторана</h2>
                     <p><a href="/site/reservation" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Забронировать столик</a></p>
                 </div>
             </div>
