@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 09/07/2018 02:38
+    Creation date: 25/09/2018 08:24
     */
 
     @font-face {
@@ -36,12 +36,18 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-meat:before { content: "\f100"; }
-.flaticon-dish:before { content: "\f101"; }
-.flaticon-cutlery:before { content: "\f102"; }
-.flaticon-cheers:before { content: "\f103"; }
+    .flaticon-pizza-1:before { content: "\f100"; }
+.flaticon-pizza:before { content: "\f101"; }
+.flaticon-bicycle:before { content: "\f102"; }
+.flaticon-diet:before { content: "\f103"; }
+.flaticon-medal:before { content: "\f104"; }
+.flaticon-laugh:before { content: "\f105"; }
+.flaticon-chef:before { content: "\f106"; }
     
-    $font-Flaticon-meat: "\f100";
-    $font-Flaticon-dish: "\f101";
-    $font-Flaticon-cutlery: "\f102";
-    $font-Flaticon-cheers: "\f103";
+    $font-Flaticon-pizza-1: "\f100";
+    $font-Flaticon-pizza: "\f101";
+    $font-Flaticon-bicycle: "\f102";
+    $font-Flaticon-diet: "\f103";
+    $font-Flaticon-medal: "\f104";
+    $font-Flaticon-laugh: "\f105";
+    $font-Flaticon-chef: "\f106";

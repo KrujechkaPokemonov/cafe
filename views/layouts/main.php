@@ -35,11 +35,10 @@ PublicAsset::register($this);
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="/"><img src="/public/images/logo.png" alt="KissKiss"></a>
+        <a class="navbar-brand" href="\"><img src="/public/images/logotip.png" alt="KissKiss"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
         </button>
-
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><?= Html::a('Главная', ['/'], ['class' => 'nav-link']) ?></li>
@@ -52,20 +51,8 @@ PublicAsset::register($this);
 </nav>
 <!-- END nav -->
 
-<section class="home-slider owl-carousel">
-    <div class="slider-item" style="background-image: url('/public/images/bg.jpg');">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row slider-text align-items-center justify-content-center text-center">
-                <div class="col-md-10 col-sm-12 ftco-animate">
-                    <h1 class="mb-3">KissKiss</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
-<!-- END slider -->
+
 
 <?= $content ?>
 

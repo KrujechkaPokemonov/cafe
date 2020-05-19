@@ -1,53 +1,21 @@
 
-<!-- Broni -->
-<div class="ftco-section-reservation">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 reservation pt-5 px-5">
-                <div class="block-17">
-                    <form action="" method="post" class="d-block d-lg-flex">
-                        <div class="fields d-block d-lg-flex">
+<section class="home-slider owl-carousel img" style="background-image: url(/public/images/fon-2.jpg);">
+    <div class="slider-item">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row slider-text align-items-center" data-scrollax-parent="true">
 
-                            <div class="textfield-name one-third"><input type="text" class="form-control" placeholder="Имя"></div>
-
-                            <div class="textfield-phone one-third"><input type="text" class="form-control" placeholder="Телефон"></div>
-
-                            <div class="book-date one-third"><input type="text" id="book_date" class="form-control" placeholder="M/D/YYYY"></div>
-
-                            <div class="book-time one-third">
-                                <input type="text" id="book_time" class="form-control" placeholder="Время">
-                            </div>
-
-                            <div class="select-wrap one-third">
-                                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                <select name="" id="" class="form-control">
-                                    <option value="">Зал</option>
-                                    <option value="">Крыша</option>
-                                    <option value="">Диван</option>
-                                    <option value="">Подвал</option>
-                                </select>
-                            </div>
-
-                            <div class="select-wrap one-third">
-                                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                <select name="" id="" class="form-control">
-                                    <option value="">Персон</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                    <option value="">4+</option>
-                                </select>
-                            </div>
-                        </div>
-                        <input type="submit" class="search-submit btn btn-primary" value="Бронь">
-                    </form>
+                <div class="col-md-7 col-sm-12 ftco-animate">
+                    <h1 class="mb-4">KissKiss</h1>
+                    <h2 class="mb-4">Меню ресторана</h2>
+                    <p><a href="/site/reservation" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Забронировать столик</a></p>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- END Broni -->
-<br>
+</section>
+
+
 <section class="ftco-section-2">
 
     <br>

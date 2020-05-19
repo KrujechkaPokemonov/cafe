@@ -92,7 +92,6 @@
   .nav-item {
     flex: 1 1 auto;
     text-align: center;
-    size: 50px;
   }
 }
 
@@ -105,7 +104,9 @@
 }
 
 
-
+// Tabbable tabs
+//
+// Hide tabbable panes to start, show them when `.active`
 
 .tab-content {
   > .tab-pane {

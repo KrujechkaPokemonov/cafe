@@ -1,8 +1,7 @@
-  /*
-    Flaticon icon font: Flaticon
-    Creation date: 09/07/2018 02:38
-    */
-
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 10/09/2018 08:41
+  	*/
 @font-face {
   font-family: "Flaticon";
   src: url("../fonts/flaticon/font/Flaticon.eot");
@@ -35,7 +34,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.flaticon-meat:before { content: "\f100"; }
-.flaticon-dish:before { content: "\f101"; }
-.flaticon-cutlery:before { content: "\f102"; }
-.flaticon-cheers:before { content: "\f103"; }
+.flaticon-pizza-1:before { content: "\f100"; }
+.flaticon-pizza:before { content: "\f101"; }
+.flaticon-bicycle:before { content: "\f102"; }
+.flaticon-diet:before { content: "\f103"; }
+.flaticon-medal:before { content: "\f104"; }
+.flaticon-laugh:before { content: "\f105"; }
+.flaticon-chef:before { content: "\f106"; }
+

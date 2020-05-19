@@ -3,100 +3,112 @@ use yii\helpers\Url;
 use yii\widgets\LinkPager;
 ?>
 
-<!-- Reservation -->
-<div class="ftco-section-reservation">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 reservation pt-5 px-5">
-                <div class="block-17">
-                    <form action="" method="post" class="d-block d-lg-flex">
-                        <div class="fields d-block d-lg-flex">
+<section class="home-slider owl-carousel img" style="background-image: url(/public/images/fon-1.jpg);">
+    <div class="slider-item">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row slider-text align-items-center" data-scrollax-parent="true">
 
-                            <div class="textfield-name one-third"><input type="text" class="form-control" placeholder="Имя"></div>
-
-                            <div class="textfield-phone one-third"><input type="text" class="form-control" placeholder="Телефон"></div>
-
-                            <div class="book-date one-third"><input type="text" id="book_date" class="form-control" placeholder="M/D/YYYY"></div>
-
-                            <div class="book-time one-third">
-                                <input type="text" id="book_time" class="form-control" placeholder="Время">
-                            </div>
-
-                            <div class="select-wrap one-third">
-                                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                <select name="" id="" class="form-control">
-                                    <option value="">Зал</option>
-                                    <option value="">Крыша</option>
-                                    <option value="">Диван</option>
-                                    <option value="">Подвал</option>
-                                </select>
-                            </div>
-
-                            <div class="select-wrap one-third">
-                                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                                <select name="" id="" class="form-control">
-                                    <option value="">Персон</option>
-                                    <option value="">1</option>
-                                    <option value="">2</option>
-                                    <option value="">3</option>
-                                    <option value="">4</option>
-                                </select>
-                            </div>
-                        </div>
-                        <input type="submit" class="search-submit btn btn-primary" value="Бронь">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END Reservation -->
-
-<!-- About -->
-<section class="ftco-section-2">
-    <div class="container d-flex">
-        <div class="section-2-blocks-wrapper row">
-            <div class="img col-sm-12 col-lg-6" style="background-image: url('public/images/about-6.jpg');">
-            </div>
-            <div class="text col-lg-6 ftco-animate">
-                <div class="text-inner align-self-start">
-                    <h3 class="heading" align="center">О НАС</h3>
-                    <p align="justify">KissKiss - это уникальный ресторан, место, где ты счастлив! А всё
-                        из-за того, что в нашем ресторане вы можете провести своё время не один, а с пушистыми мурлыкающими
-                        питомцами! Приятная музыка, вкусная еда, мурлыкающие друзья. Всё это невозможно остановить,
-                        это мгновения, ради которых мы живем и для которых мы построили «KissKiss».</p>
-
-                    <p align="justify">Есть KissKiss, есть повод встретиться…
-                    </p>
-
-                    <p align="justify">KissKiss – место, где можно сидеть часами, наблюдая за красивым видом из окна,
-                        мелькающими мимо людьми или за погодой. Вы можете не только посидеть с нашими питомцами, но и
-                        прийти со своим!</p>
+                <div class="col-md-7 col-sm-12 ftco-animate">
+                    <h1 class="mb-4">KissKiss</h1>
+                    <p><a href="#" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Забронировать столик</a></p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<!-- END About -->
+<!-- END slider -->
 
-<section class="ftco-section-2">
-    <div class="container d-flex">
-        <div class="section-2-blocks-wrapper row">
+<section class="ftco-about d-md-flex">
+    <div class="one-half img" style="background-image: url(/public/images/index-1.jpeg);"></div>
+    <div class="one-half ftco-animate">
+        <div class="heading-section ftco-animate ">
+            <h2 class="mb-4">Добро пожаловать в <font color="#c55bfa">KissKiss</font> ресторан</h2>
+        </div>
+        <div>
+            <font size="4px">KissKiss - это уникальный ресторан, место, где ты счастлив! А всё из-за того, что в нашем ресторане вы можете провести своё время не один,
+                а с пушистыми мурлыкающими питомцами! Приятная музыка, вкусная еда, мурлыкающие друзья. Всё это невозможно остановить, это мгновения,
+                ради которых мы живем и для которых мы построили «KissKiss».
 
-            <div class="text col-lg-6 ftco-animate">
-                <div class="text-inner align-self-start">
-                    <h3 class="heading" align="center">ШЕФ-ПОВАР</h3>
-                    <p align="justify">Альберт Иванович начинал свой путь в академии поваров. На данный момент в его
-                        профессиональной биографии-более десятка лет в кулинарном деле, а также практика в
-                        престижных ресторанах Северной столицы. Проводил мастер-классы молекулярной
-                        кухни для членой британской королевской семьи, стал почётным участником фестиваля
-                        европейской кухни. Имеет «звезду Мишлена», а также лично разработал уникальное и
-                        сбалансированное меню, блюда которого можно отведать только в «KissKiss».</p>
-                </div>
-            </div>
-            <div class="img col-sm-12 col-lg-6" style="background-image: url('public/images/about-7.jpg');">
+                <br><br>Есть KissKiss, есть повод встретиться…<br><br>
+
+                KissKiss – место, где можно сидеть часами, наблюдая за красивым видом из окна, мелькающими мимо людьми или за погодой. Вы можете не только посидеть с нашими питомцами, но и прийти со своим!</font></div>
+    </div>
+</section>
+
+<section class="ftco-section ftco-services">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section ftco-animate text-center">
+                <h2 class="mb-4"><font color="white" size="7">Наш сервис</font></h2>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-4 ftco-animate">
+                <div class="media d-block text-center block-6 services">
+                    <div class="icon d-flex justify-content-center align-items-center mb-5">
+                        <span><img src="/public/images/cat.png" alt="KissKiss"></span>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="heading"><font color="white" size="5">Пушистые питомцы</font></h3>
+                        <font color="white" size="4"> <p>В нашем ресторане вы можете провести своё время не одни, а со своими питомцами или питомцами нашего ресторана!</p></font>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate">
+                <div class="media d-block text-center block-6 services">
+                    <div class="icon d-flex justify-content-center align-items-center mb-5">
+                        <span><img src="/public/images/cup.png" alt="KissKiss"></span>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="heading"><font color="white" size="5">Бесплатный Wi-Fi</font></h3>
+                        <font color="white" size="4"><p>Бесплатный wi-fi всем нашим посетителям, чтобы вам было комфортно работать или проводить своё время в нашем ресторане.</p></font>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate">
+                <div class="media d-block text-center block-6 services">
+                    <div class="icon d-flex justify-content-center align-items-center mb-5">
+                        <span><img src="/public/images/kitchen.png" alt="KissKiss"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading"><font color="white" size="5">Шеф-повар</font></h3>
+                        <font color="white" size="4"> <p>Наш шеф-повар и его команда приготовят вам вкусные блюда.</p> </font>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate">
+                <div class="media d-block text-center block-6 services">
+                    <div class="icon d-flex justify-content-center align-items-center mb-5">
+                        <span><img src="/public/images/game.png" alt="KissKiss"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading"><font color="white" size="5">Консольные игры</font></h3>
+                        <font color="white" size="4"><p>Вы всегда можете сыграть в PlayStation 4 или Xbox One X за отдельную платную в цокольном этаже нашего ресторана!</p></font>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate">
+                <div class="media d-block text-center block-6 services">
+                    <div class="icon d-flex justify-content-center align-items-center mb-5">
+                        <span><img src="/public/images/rounded.png" alt="KissKiss"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading"><font color="white" size="5">Обслуживание</font></h3>
+                        <font color="white" size="4"><p>Наши вежливые официанты и бармены смогут вам помочь во многих вопросах о нашем ресторане, но так же будьте вежливы и к ним!</p></font>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 ftco-animate">
+                <div class="media d-block text-center block-6 services">
+                    <div class="icon d-flex justify-content-center align-items-center mb-5">
+                        <span><img src="/public/images/hands.png" alt="KissKiss"></span></div>
+                    <div class="media-body">
+                        <h3 class="heading"><font color="white" size="5">Мойте руки</font></h3>
+                        <font color="white" size="4"> <p>Пожалуйста, прежде чем приступить к пище, помойте свои руки! И после того как играли с нашими питомцами тоже!</p></font>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- Reklama -->
