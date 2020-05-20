@@ -302,7 +302,7 @@ h1, h2, h3, h4, h5,
 			opacity: 1;
 		}
 	}
-	
+
 	.owl-nav {
 		position: absolute;
 		top: 50%;
@@ -499,12 +499,12 @@ h1, h2, h3, h4, h5,
 					top: 50%;
 					display: block;
 					transform: translate(-50%, -50%);
-				}	
+				}
 				&.active {
 					border: 2px solid rgba(255,255,255,1);
-					span {	
+					span {
 						background: rgba(255,255,255,1);
-					}	
+					}
 				}
 			}
 		}
@@ -755,7 +755,7 @@ h1, h2, h3, h4, h5,
 		margin-bottom: 30px;
 	}
 	.img,.text{
-		width: 50%;
+		width: 100%;
 	}
 	.img{
 		display: block;

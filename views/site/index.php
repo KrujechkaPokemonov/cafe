@@ -120,15 +120,15 @@ use yii\widgets\LinkPager;
         </div>
         <div class="row d-flex">
             <?php foreach($articles as $article):?>
-            <div class="col-md-4 d-flex ftco-animate">
-                <div class="blog-entry align-self-stretch ">
-                    <img src="<?= $article->getImage();?>" alt="">
-                    <div class="text py-4 d-block">
-                        <h3 class="heading mt-2"></h3>
-                        <font color="white" size="4"><p><?= $article->title?></p></font>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry align-self-stretch">
+                        <img src="<?= $article->getImage();?>" alt="">
+                        <div class="text py-4 d-block">
+                            <h3 class="heading mt-2"></h3>
+                            <font color="white" size="4"><p><?= $article->title?></p></font>
+                        </div>
                     </div>
                 </div>
-            </div>
             <?php endforeach; ?>
         </div>
     </div>
