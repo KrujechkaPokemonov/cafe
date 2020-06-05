@@ -86,7 +86,7 @@ PublicAsset::register($this);
                     <ul class="list-unstyled">
                         <li><a href="#" class="py-2 d-block">ул. Богдана Благославенного, д.26, Дэпилгтон</a></li>
                         <li><a href="#" class="py-2 d-block">+234-2415-63-63</a></li>
-                        <li><a href="#" class="py-2 d-block">kisskiss@gmail.com</a></li>
+                        <li><a href="#" class="py-2 d-block">krujechka_pokemonov@gmail.com</a></li>
                     </ul>
                 </div>
             </div>

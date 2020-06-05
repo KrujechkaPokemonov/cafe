@@ -116,20 +116,33 @@ use yii\widgets\LinkPager;
         <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-7 heading-section ftco-animate text-center">
                 <h2 class="mb-4">Новости ресторана</h2>
-            </div>
+                </div>
         </div>
         <div class="row d-flex">
             <?php foreach($articles as $article):?>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry align-self-stretch">
-                        <img src="<?= $article->getImage();?>" alt="">
-                        <div class="text py-4 d-block">
-                            <h3 class="heading mt-2"></h3>
-                            <font color="white" size="4"><p><?= $article->title?></p></font>
-                        </div>
+            <div class="col-md-4 d-flex ftco-animate">
+                <div class="blog-entry align-self-stretch">
+                    <img src="<?= $article->getImage();?>" alt="">
+                    <div class="text py-4 d-block">
+                        <font color="white" size="4"><p><?= $article->title?></p></font>
                     </div>
                 </div>
+            </div>
             <?php endforeach; ?>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <div class="block-27">
+                    <ul>
+                        <li><a href="#">&lt;</a></li>
+                        <li class="active"><span>1</span></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&gt;</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </section>

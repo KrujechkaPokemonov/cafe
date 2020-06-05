@@ -7289,9 +7289,9 @@ a {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  color: #c55bfa; }
+  color: #ffffff; }
   a:hover, a:active, a:focus {
-    color: #c55bfa;
+    color: #afabab;
     outline: none !important;
     text-decoration: none !important; }
 
