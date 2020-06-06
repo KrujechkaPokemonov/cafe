@@ -124,12 +124,13 @@ use yii\widgets\LinkPager;
                 <div class="blog-entry align-self-stretch">
                     <img src="<?= $article->getImage();?>" alt="">
                     <div class="text py-4 d-block">
-                        <font color="white" size="4"><p><?= $article->title?></p></font>
+                        <p><?= $article->title?></p>
                     </div>
                 </div>
             </div>
             <?php endforeach; ?>
-        <div class="row mt-5">
+        </div>
+        <div class="container row mt-5">
             <div class="col text-center">
                 <div class="block-27">
                     <ul>
@@ -144,7 +145,6 @@ use yii\widgets\LinkPager;
                 </div>
             </div>
         </div>
-    </div>
 </section>
 
 
