@@ -10,6 +10,7 @@ use app\models\Menu;
 use app\models\News;
 use app\models\Lounge;
 use Yii;
+use yii\data\Pagination;
 use yii\debug\panels\DumpPanel;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -126,9 +127,17 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        $article = News ::find() -> all();
+        $query = News::find();
+        $countQuery = clone $query;
+
+        $pages = new Pagination(['totalCount' => $countQuery->count(), 'pageSize' => 3]);
+        $models = $query->offset($pages->offset)
+            ->limit($pages->limit)
+            ->all();
+
         return $this -> render('index', [
-            'articles' => $article,
+            'articles' => $models,
+            'pages' => $pages,
         ]);
     }
 
