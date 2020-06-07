@@ -3,7 +3,7 @@ use yii\helpers\Url;
 use yii\widgets\LinkPager;
 ?>
 
-    <section class="home-slider owl-carousel img" style="background-image: url(/public/images/fon-3.jpg);">
+    <section class="home-slider owl-carousel img" style="background-image: url(/public/images/fon-4.jpg);">
         <div class="slider-item">
             <div class="overlay"></div>
             <div class="container">
@@ -47,7 +47,7 @@ use yii\widgets\LinkPager;
                     <div class="text col-lg-6 ftco-animate">
                         <div class="text-inner align-self-start">
                             <h3 class="heading" align="center"><?= $section->title ?></h3>
-                            <p align="justify"> <?=$section->description ?></p>
+                            <font size="5"><p align="justify"> <?=$section->description ?></p></font>
                         </div>
                     </div>
                 </div>

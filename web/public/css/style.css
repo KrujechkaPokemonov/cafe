@@ -8637,17 +8637,17 @@ textarea.form-control {
     margin-bottom: 4px;
     font-weight: 400; }
     .block-27 ul li a, .block-27 ul li span {
-      color: #fac564;
+      color: #d484f3;
       text-align: center;
       display: inline-block;
       width: 40px;
       height: 40px;
       line-height: 40px;
       border-radius: 50%;
-      border: 1px solid #bf7e06; }
+      border: 1px solid #8f1c93; }
     .block-27 ul li.active a, .block-27 ul li.active span {
-      background: #fac564;
-      color: #fff;
+      background: #c55bfa;
+      color: #ffffff;
       border: 1px solid transparent; }
 
 .contact-section .contact-info p span {
@@ -8974,3 +8974,7 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+.form-control {
+  color: #7f7f7f !important;
+}

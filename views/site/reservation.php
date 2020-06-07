@@ -4,7 +4,7 @@ use yii\widgets\LinkPager;
 //use Yii;
 ?>
 
-<section class="home-slider owl-carousel img" style="background-image: url(/public/images/fon-4.jpg);">
+<section class="home-slider owl-carousel img" style="background-image: url(/public/images/fon-3.jpg);">
     <div class="slider-item">
         <div class="overlay"></div>
         <div class="container">
@@ -42,17 +42,20 @@ use yii\widgets\LinkPager;
                     <?php endif; ?>
                 <?php endif; ?>
 
-                <form action="<?php echo Url::toRoute('site/reservation'); ?>" method="post" >
+                <form action="<?php echo Url::toRoute('site/reservation'); ?>" method="post" class="row">
                     <input type="text" name="_csrf" value="<?php echo \Yii::$app->request->csrfToken; ?>" hidden>
-                    <div class="d-md-flex">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="Reservation[name]" placeholder="Имя">
+
+                    <div class="col-12 row d-flex justify-content-center align-items-end">
+
+                        <div class="form-group col-6">
+                            <label for="">Имя</label>
+                            <input type="text" class="form-control" name="Reservation[name]" placeholder="Введите имя">
                         </div>
-                        <div class="col-md-6">
+                        <div class=" col-6">
                             <div class="form-group">
                                 <label for="">Зал</label>
-                                <div class="select-wrap one-third">
-                                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                                <div class="select-wrap one-third ">
+<!--                                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>-->
                                     <select name="Reservation[id_lounge]" id="" class="form-control">
                                         <?php foreach ($lounges as $lounge) : ?>
                                             <option value="<?= $lounge->id ?>"><?= $lounge->title ?></option>
@@ -63,28 +66,26 @@ use yii\widgets\LinkPager;
                         </div>
                     </div>
 
-                    <div class="d-md-flex">
-                        <div class="form-group">
+                    <div class="col-12 row">
+                        <div class="form-group col-6">
                             <div class="input-wrap">
                                 <div class="icon"><span class="ion-md-calendar"></span></div>
-                                <input type="text" class="form-control" name="Reservation[date]" id="book_date" placeholder="Выберите дату">
+                                <input type="date" class="form-control appointment_date" name="Reservation[date]"  placeholder="Выберите дату">
                             </div>
                         </div>
-                        <div class="form-group ml-md-4">
+                        <div class="form-group col-6">
                             <div class="input-wrap">
                                 <div class="icon"><span class="ion-ios-clock"></span></div>
-                                <input type="text" class="form-control" name="Reservation[time]" id="book_time" placeholder="Выберите время">
+                                <input type="time" class="form-control appointment_time" name="Reservation[time]" placeholder="Выберите время">
                             </div>
                         </div>
-                        <div class="form-group ml-md-4">
-                            <input type="text" id="phone" name="Reservation[phone]" class="form-control" placeholder="Введите телефон">
-                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
+
+                    <div class="col-md-12 row d-flex justify-content-center align-items-end">
+                        <div class="form-group col-6">
                             <label for="">Персон</label>
                             <div class="select-wrap one-third">
-                                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+<!--                                <div class="icon"><span class="ion-ios-arrow-down"></span></div>-->
                                 <select  id="" class="form-control" name="Reservation[person]" >
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -93,10 +94,22 @@ use yii\widgets\LinkPager;
                                 </select>
                             </div>
                         </div>
+                        <div class="form-group col-6">
+                            <label for="">Телефон</label>
+                            <input type="text" id="phone" name="Reservation[phone]" class="form-control" placeholder="Введите телефон">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="">E-mail</label>
+                            <input type="text" id="email" name="Reservation[email]" class="form-control" placeholder="Введите e-mail">
+                        </div>
                     </div>
-                    <div class="form-group ml-md-4">
+
+                    <div class="form-group col-6 mx-auto">
                         <input type="submit" value="Забронировать" name="send" class="btn btn-primary py-3 px-4">
                     </div>
+
+            </div>
+
             </div>
             </form>
         </div>
