@@ -46,10 +46,15 @@ use yii\widgets\LinkPager;
                     <input type="text" name="_csrf" value="<?php echo \Yii::$app->request->csrfToken; ?>" hidden>
 
                     <div class="col-12 row d-flex justify-content-center align-items-end">
+<<<<<<< HEAD
 
                         <div class="form-group col-6">
                             <label for="">Имя</label>
                             <input type="text" class="form-control" name="Reservation[name]" placeholder="Введите имя">
+=======
+                        <div class="form-group col-6">
+                            <input type="text" class="form-control" name="Reservation[name]" placeholder="Имя">
+>>>>>>> a028138174c75822f49b39671a0a84830d775428
                         </div>
                         <div class=" col-6">
                             <div class="form-group">
@@ -95,6 +100,7 @@ use yii\widgets\LinkPager;
                             </div>
                         </div>
                         <div class="form-group col-6">
+<<<<<<< HEAD
                             <label for="">Телефон</label>
                             <input type="text" id="phone" name="Reservation[phone]" class="form-control" placeholder="Введите телефон">
                         </div>
@@ -102,6 +108,10 @@ use yii\widgets\LinkPager;
                             <label for="">E-mail</label>
                             <input type="text" id="email" name="Reservation[email]" class="form-control" placeholder="Введите e-mail">
                         </div>
+=======
+                            <input type="text" id="phone" name="Reservation[phone]" class="form-control" placeholder="Введите телефон">
+                        </div>
+>>>>>>> a028138174c75822f49b39671a0a84830d775428
                     </div>
 
                     <div class="form-group col-6 mx-auto">

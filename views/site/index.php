@@ -124,7 +124,7 @@ use yii\widgets\LinkPager;
                 <div class="blog-entry align-self-stretch">
                     <img src="<?= $article->getImage();?>" alt="">
                     <div class="text py-4 d-block">
-                        <p><?= $article->title?></p>
+                        <font color="white" size="4"> <p><?= $article->title?></p></font>
                     </div>
                 </div>
             </div>
