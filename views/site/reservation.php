@@ -13,6 +13,7 @@ use yii\widgets\LinkPager;
                 <div class="col-md-12 text-center heading-section ftco-animate">
                     <h1 ">KissKiss</h1>
                     <h2>Бронирование</h2>
+                    <p><a href="/site/lounge" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Посмотреть столики</a></p>
                      </div>
             </div>
         </div>
@@ -24,8 +25,8 @@ use yii\widgets\LinkPager;
     <div class="overlay"></div>
     <div class="container-wrap">
         <div class="row no-gutters d-md-flex align-items-center">
-            <div class="col-md-6 d-flex align-self-stretch">
-
+            <div class="col-md-4 d-flex ">
+                <img src="/public/images/game1.png" alt="KissKiss">
             </div>
             <div class="col-md-6 appointment ftco-animate">
                 <h3 class="mb-3">Бронирование столика</h3>
@@ -70,13 +71,21 @@ use yii\widgets\LinkPager;
                         <div class="form-group col-6">
                             <div class="input-wrap">
                                 <div class="icon"><span class="ion-md-calendar"></span></div>
-                                <input type="date" class="form-control appointment_date" name="Reservation[date]"  placeholder="Выберите дату">
+                                <input type="text" id="datepicker" class="form-control appointment_date" name="Reservation[date]"  placeholder="Выберите дату">
                             </div>
                         </div>
                         <div class="form-group col-6">
                             <div class="input-wrap">
                                 <div class="icon"><span class="ion-ios-clock"></span></div>
-                                <input type="time" class="form-control appointment_time" name="Reservation[time]" placeholder="Выберите время">
+                                <select  id="" class="form-control" name="Reservation[time]" >
+                                    <option value="13.30">13.30</option>
+                                    <option value="14.30">14.30</option>
+                                    <option value="15.30">15.30</option>
+                                    <option value="16.30">16.30</option>
+                                    <option value="17.30">17.30</option>
+                                    <option value="18.30">18.30</option>
+                                    <option value="19.30">19.30</option>
+                                </select>
                             </div>
                         </div>
                     </div>
@@ -102,17 +111,35 @@ use yii\widgets\LinkPager;
                             <label for="">E-mail</label>
                             <input type="text" id="email" name="Reservation[email]" class="form-control" placeholder="Введите e-mail">
                         </div>
+                        <div class="form-group col-6">
+                            <label for="">Столик</label>
+                            <div class="select-wrap one-third">
+                                <select  id="" class="form-control" name="Reservation[table]" >
+                                    <?php foreach ($booktables as $booktable) : ?>
+                                        <option value="<?= $booktable->id ?>"><?= $booktable->title ?></option>
+                                    <?php endforeach ?>
+                                </select>
+                            </div>
+                        </div>
                     </div>
+
 
                     <div class="form-group col-6 mx-auto">
                         <input type="submit" value="Забронировать" name="send" class="btn btn-primary py-3 px-4">
                     </div>
-
             </div>
-
             </div>
             </form>
         </div>
     </div>
     </div>
 </section>
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $( function() {
+        $( "#datepicker" ).datepicker();
+    } );
+</script>

@@ -5,20 +5,20 @@ namespace app\models;
 use Yii;
 
 /**
- * This is the model class for table "advertiser".
+ * This is the model class for table "messagere".
  *
  * @property int $id
- * @property string $name
- * @property string $email
+ * @property string $text
+ * @property string $status
  */
-class Advertiser extends \yii\db\ActiveRecord
+class Messagere extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
     public static function tableName()
     {
-        return 'advertiser';
+        return 'messagere';
     }
 
     /**
@@ -27,8 +27,9 @@ class Advertiser extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'email'], 'string', 'max' => 255],
-            [['email'], 'unique'],
+            [['text', 'status'], 'required'],
+            [['text'], 'string'],
+            [['status'], 'string', 'max' => 255],
         ];
     }
 
@@ -39,8 +40,8 @@ class Advertiser extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'email' => 'Email',
+            'text' => 'Text',
+            'status' => 'Status',
         ];
     }
 }

@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Administrator;
+use app\models\Booktable;
 use app\models\Foodanddrinks;
 use app\models\Menuitems;
 use app\models\Reservation;
@@ -153,6 +154,14 @@ class SiteController extends Controller
         ]);
     }
 
+    public function actionBooktable()
+    {
+        $data = Booktable ::find() -> all();
+
+        return $this -> render('booktable', [
+            'booktable' => $data,
+        ]);
+    }
 
     /**
      * КСТАТИ
@@ -191,10 +200,12 @@ class SiteController extends Controller
 
         $data = Reservation ::find() -> all();
         $lounge = Lounge ::find() -> all();
+        $booktable = Booktable ::find() -> all();
 
         return $this -> render('reservation', [
             'reservation' => $data,
-            'lounges' => $lounge
+            'lounges' => $lounge,
+            'booktables' => $booktable
         ]);
     }
 

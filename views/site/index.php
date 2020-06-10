@@ -131,8 +131,8 @@ use yii\widgets\LinkPager;
             <?php endforeach; ?>
         </div>
 
-        <div class="container row mt-5 ">
-            <div class="col text-center">
+        <div class="parent">
+            <div class="block"> <br><br><br><br><br><br><br><br><br><br><br><br><br>
                 <div class="block-27">
                   <?php
                    echo LinkPager::widget([
