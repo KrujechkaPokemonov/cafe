@@ -13,6 +13,7 @@ use yii\widgets\LinkPager;
                         <h1>KissKiss</h1>
                         <h2>Залы ресторана</h2>
                         <p><a href="/site/reservation" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Забронировать столик</a></p>
+                        <p><a href="/public/table.pdf" class="btn btn-white btn-outline-white p-3 px-xl-4 py-xl-3">Просмотр столиков</a></p>
                     </div>
                 </div>
             </div>
@@ -59,3 +60,6 @@ use yii\widgets\LinkPager;
 
 
     <?php $i++; endforeach; ?>
+
+
+

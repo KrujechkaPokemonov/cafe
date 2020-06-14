@@ -61,7 +61,6 @@ AppAsset::register($this);
         }
         else if (Yii::$app->user->identity->isnews){
             $items[1]=['label' => 'Новости', 'url' => ['/admin/news/index']];
-            $items[9]=['label' => 'Мои сообщения', 'url' => ['/admin/messageread/index']];
         }
     };
 

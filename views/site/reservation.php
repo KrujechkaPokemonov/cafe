@@ -143,3 +143,4 @@ use yii\widgets\LinkPager;
         $( "#datepicker" ).datepicker();
     } );
 </script>
+
