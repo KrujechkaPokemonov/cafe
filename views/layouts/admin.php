@@ -57,10 +57,10 @@ AppAsset::register($this);
             $items[9]=['label' => 'Сообщения', 'url' => ['/admin/messagere/index']];
         }else if (Yii::$app->user->identity->ismoder){
             $items[1]=['label' => 'Брони', 'url' => ['/admin/reservation/index']];
-            $items[2]=['label' => 'Подтверждение брони', 'url' => ['/site/confirmation']];
         }
         else if (Yii::$app->user->identity->isnews){
             $items[1]=['label' => 'Новости', 'url' => ['/admin/news/index']];
+            $items[2]=['label' => 'Полученные сообщения', 'url' => ['/admin/messageread/index']];
         }
     };
 
