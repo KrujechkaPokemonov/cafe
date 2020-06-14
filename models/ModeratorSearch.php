@@ -17,8 +17,8 @@ class ModeratorSearch extends Moderator
     public function rules()
     {
         return [
-            [['id', 'id_reservation'], 'integer'],
-            [['name', 'email', 'password'], 'safe'],
+            [['id'], 'integer'],
+            [['name', 'email'], 'safe'],
         ];
     }
 
@@ -59,12 +59,10 @@ class ModeratorSearch extends Moderator
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'id_reservation' => $this->id_reservation,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'email', $this->email])
-            ->andFilterWhere(['like', 'password', $this->password]);
+            ->andFilterWhere(['like', 'email', $this->email]);
 
         return $dataProvider;
     }

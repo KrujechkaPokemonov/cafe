@@ -17,15 +17,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'id_administrator') ?>
-
-    <?= $form->field($model, 'id_news') ?>
-
     <?= $form->field($model, 'name') ?>
 
     <?= $form->field($model, 'email') ?>
-
-    <?php // echo $form->field($model, 'password') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

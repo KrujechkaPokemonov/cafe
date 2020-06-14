@@ -5,10 +5,10 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Administrator */
 
-$this->title = 'Update Administrator: ' . $model->name;
-$this->params['breadcrumbs'][] = ['label' => 'Administrators', 'url' => ['index']];
+$this->title = 'Обновить запись: ' . $model->name;
+$this->params['breadcrumbs'][] = ['label' => 'Администраторы', 'url' => ['index']];
 $this->params['breadcrumbs'][] = ['label' => $model->name, 'url' => ['view', 'id' => $model->id]];
-$this->params['breadcrumbs'][] = 'Update';
+$this->params['breadcrumbs'][] = 'Обновить';
 ?>
 <div class="administrator-update">
 

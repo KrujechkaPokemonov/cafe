@@ -93,18 +93,7 @@ PublicAsset::register($this);
                     </ul>
                 </div>
             </div>
-            <div class="col-md">
-                <div class="ftco-footer-widget mb-4">
-                    <h2 class="ftco-heading-2">Новостные рассылки</h2>
-                    <p>Подпишитесь на наши рассылки, чтобы знать о новостях и акциях ресторана.</p>
-                    <form action="#" class="subscribe-form">
-                        <div class="form-group">
-                            <span class="icon icon-paper-plane"></span>
-                            <input type="text" class="form-control" placeholder="E-mail">
-                        </div>
-                    </form>
-                </div>
-            </div>
+            
         </div>
         <div class="row">
             <div class="col-md-12 text-center">

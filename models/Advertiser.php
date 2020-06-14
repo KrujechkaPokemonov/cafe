@@ -39,8 +39,8 @@ class Advertiser extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'name' => 'Name',
-            'email' => 'Email',
+            'name' => 'ФИО',
+            'email' => 'E-mail',
         ];
     }
 }

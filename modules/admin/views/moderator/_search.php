@@ -17,13 +17,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id') ?>
 
-    <?= $form->field($model, 'id_reservation') ?>
-
     <?= $form->field($model, 'name') ?>
 
     <?= $form->field($model, 'email') ?>
-
-    <?= $form->field($model, 'password') ?>
 
     <div class="form-group">
         <?= Html::submitButton('Search', ['class' => 'btn btn-primary']) ?>

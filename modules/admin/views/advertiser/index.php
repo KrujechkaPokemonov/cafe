@@ -7,7 +7,7 @@ use yii\grid\GridView;
 /* @var $searchModel app\models\AdvertiserSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Advertisers';
+$this->title = 'Рекламщики';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="advertiser-index">
@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Advertiser', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Создать запись о пользователе', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -26,12 +26,8 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
-            'id_administrator',
-            'id_news',
             'name',
             'email:email',
-            //'password',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

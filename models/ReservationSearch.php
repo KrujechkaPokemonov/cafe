@@ -17,8 +17,8 @@ class ReservationSearch extends Reservation
     public function rules()
     {
         return [
-            [['id', 'id_lounge'], 'integer'],
-            [['name', 'phone', 'date', 'time', 'person', 'status'], 'safe'],
+            [['id', 'id_lounge', 'id_booktable'], 'integer'],
+            [['name', 'phone', 'date', 'time', 'person', 'email', 'status'], 'safe'],
         ];
     }
 
@@ -60,13 +60,15 @@ class ReservationSearch extends Reservation
         $query->andFilterWhere([
             'id' => $this->id,
             'id_lounge' => $this->id_lounge,
-            'date' => $this->date,
-            'time' => $this->time,
+            'id_booktable' => $this->id_booktable,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
             ->andFilterWhere(['like', 'phone', $this->phone])
+            ->andFilterWhere(['like', 'date', $this->date])
+            ->andFilterWhere(['like', 'time', $this->time])
             ->andFilterWhere(['like', 'person', $this->person])
+            ->andFilterWhere(['like', 'email', $this->email])
             ->andFilterWhere(['like', 'status', $this->status]);
 
         return $dataProvider;

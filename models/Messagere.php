@@ -9,7 +9,8 @@ use Yii;
  *
  * @property int $id
  * @property string $text
- * @property string $status
+ *
+ * @property Messageread[] $messagereads
  */
 class Messagere extends \yii\db\ActiveRecord
 {
@@ -27,9 +28,8 @@ class Messagere extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['text', 'status'], 'required'],
+            [['text'], 'required'],
             [['text'], 'string'],
-            [['status'], 'string', 'max' => 255],
         ];
     }
 
@@ -39,9 +39,16 @@ class Messagere extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'text' => 'Text',
-            'status' => 'Status',
+
+            'text' => 'Текст',
         ];
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getMessagereads()
+    {
+        return $this->hasMany(Messageread::className(), ['id_messagere' => 'id']);
     }
 }

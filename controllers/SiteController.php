@@ -4,12 +4,12 @@ namespace app\controllers;
 
 use app\models\Administrator;
 use app\models\Booktable;
-use app\models\Foodanddrinks;
 use app\models\Menuitems;
 use app\models\Reservation;
 use app\models\Menu;
 use app\models\News;
 use app\models\Lounge;
+use http\Message;
 use Yii;
 use yii\data\Pagination;
 use yii\debug\panels\DumpPanel;
@@ -163,36 +163,27 @@ class SiteController extends Controller
         ]);
     }
 
-    /**
-     * КСТАТИ
-     *
-     *
-     *
-     *
-     * Самое норм для тебя это сделать 3 модуля для разных групп пользователей
-     */
+    public function actionConfirmation()
+    {
+        return $this->render('confirmation');
+    }
+
     public function actionReservation()
     {
-        //если форма отправлена
+
         if(Yii::$app->request->isPost )
         {
             $reservation = new Reservation();
-            //загружаем то что пришло из формы (смотри форму /views/reservation.php )
+
             $reservation->load(Yii::$app->request->post());
 
-            //эта функция вместо var_dump() описана в /web/index.php
-            //она нужна для дебага
-
-
-            //если провалидировалось
             if($reservation->validate())
             {
                 $reservation->save();
 
-                //если  все норм верни что-то типа 'Успешно!!!'
                 Yii::$app->session->setFlash('reservation-status', true);
             } else {
-                //если нет то неуспешно ((
+
                 Yii::$app->session->setFlash('reservation-status', false);
             }
 
@@ -209,17 +200,6 @@ class SiteController extends Controller
         ]);
     }
 
-    public function actionMenu()
-    {
-        $data = Menu ::find() -> all();
-
-        $images = ['123.jpg', '234.jpg', '067.jpg'];
-
-        return $this -> render('menu', [
-            'menu' => $data,
-            'images' => $images
-        ]);
-    }
 
     public function actionTest()
     {
@@ -232,11 +212,4 @@ class SiteController extends Controller
         ]);
     }
 
-    public function actionVhod()
-    {
-        $article = Administrator ::find() -> all();
-        return $this -> render('ladmin', [
-            'articles' => $article,
-        ]);
-    }
 }

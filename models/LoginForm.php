@@ -4,7 +4,7 @@ namespace app\models;
 
 use Yii;
 use yii\base\Model;
-use app\models\Users;
+
 /**
  * LoginForm is the model behind the login form.
  *
@@ -13,7 +13,7 @@ use app\models\Users;
  */
 class LoginForm extends Model
 {
-    public $username;
+    public $email;
     public $password;
     public $rememberMe = true;
 
@@ -26,8 +26,9 @@ class LoginForm extends Model
     public function rules()
     {
         return [
-            // username and password are both required
-            [['username', 'password'], 'required'],
+            // email and password are both required
+            [['email', 'password'], 'required'],
+            [['email'], 'email'],
             // rememberMe must be a boolean value
             ['rememberMe', 'boolean'],
             // password is validated by validatePassword()
@@ -47,14 +48,14 @@ class LoginForm extends Model
         if (!$this->hasErrors()) {
             $user = $this->getUser();
 
-            if (!$user || !Yii::$app->security->validatePassword($this->$attribute, $user->password)) {
-                $this->addError($attribute, 'Incorrect username or password.');
+            if (!$user || !$user->validatePassword($this->password)) {
+                $this->addError($attribute, 'Incorrect email or password.');
             }
         }
     }
 
     /**
-     * Logs in a user using the provided username and password.
+     * Logs in a user using the provided email and password.
      * @return bool whether the user is logged in successfully
      */
     public function login()
@@ -66,14 +67,14 @@ class LoginForm extends Model
     }
 
     /**
-     * Finds user by [[username]]
+     * Finds user by [[email]]
      *
      * @return User|null
      */
     public function getUser()
     {
         if ($this->_user === false) {
-            $this->_user = Users::findOne(['username'=>$this->username]);
+            $this->_user = User::findByEmail($this->email);
         }
 
         return $this->_user;

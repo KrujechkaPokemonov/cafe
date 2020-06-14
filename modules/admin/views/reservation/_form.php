@@ -1,5 +1,7 @@
 <?php
 
+use app\models\Status;
+use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
@@ -10,10 +12,15 @@ use yii\widgets\ActiveForm;
 
 <div class="reservation-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin();
+    $status = Status::find()->all();?>
 
 
-    <?= $form->field($model, 'status')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'status')->dropDownList(ArrayHelper::map($status, 'id', 'status'),
+        [
+            'prompt' => 'Выбор',
+        ])
+    ?>
 
     <div class="form-group">
         <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>

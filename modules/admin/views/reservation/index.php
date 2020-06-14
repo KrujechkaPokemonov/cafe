@@ -10,19 +10,12 @@ use yii\grid\GridView;
 $this->title = 'Запросы на бронирование';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-
-
 <div class="reservation-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-    <p>Залы:</p>
-    <p>2-Крыша</p>
-    <p>3-Диван</p>
-    <p>3-Подвал</p>
-
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
-    <div class="alert alert-success">
+
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -30,16 +23,37 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             //'id',
-            'id_lounge',
+            [
+                'attribute' => 'id',
+                'value' => function ($model, $key, $index, $widget) {
+                    return $model->lounge->title;
+                },
+                'format' => 'raw',
+            ],
             'name',
             'phone',
             'date',
             'time',
             'person',
-            'status',
+            'email:email',
+            [
+                'attribute' => 'id',
+                'value' => function ($model, $key, $index, $widget) {
+                    return $model->booktable->title;
+                },
+                'format' => 'raw',
+            ],
+            [
+                'attribute' => 'id',
+                'value' => function ($model, $key, $index, $widget) {
+                    return $model->status->status;
+                },
+                'format' => 'raw',
+            ],
 
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>
-    </div>
+
+
 </div>

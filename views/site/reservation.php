@@ -114,7 +114,7 @@ use yii\widgets\LinkPager;
                         <div class="form-group col-6">
                             <label for="">Столик</label>
                             <div class="select-wrap one-third">
-                                <select  id="" class="form-control" name="Reservation[table]" >
+                                <select  id="" class="form-control" name="Reservation[id_booktable]" >
                                     <?php foreach ($booktables as $booktable) : ?>
                                         <option value="<?= $booktable->id ?>"><?= $booktable->title ?></option>
                                     <?php endforeach ?>

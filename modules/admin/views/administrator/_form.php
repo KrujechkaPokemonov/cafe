@@ -12,20 +12,12 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'id_lounge')->textInput() ?>
-
-    <?= $form->field($model, 'id_menu')->textInput() ?>
-
-    <?= $form->field($model, 'id_food_and_drinks')->textInput() ?>
-
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'email')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'password')->passwordInput(['maxlength' => true]) ?>
-
     <div class="form-group">
-        <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>

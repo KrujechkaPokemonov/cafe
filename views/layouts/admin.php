@@ -34,6 +34,38 @@ AppAsset::register($this);
 
 <div class="wrap">
     <?php
+    $items=[];
+    if (Yii::$app->user->isGuest){
+        $items[0]=['label' => 'Вход', 'url' => ['/auth/login']];
+    } else{
+        $items[0]= '<li>'
+            . Html::beginForm(['/site/logout'], 'post')
+            . Html::submitButton(
+                'Выход (' . Yii::$app->user->identity->username . ')',
+                ['class' => 'btn btn-link logout']
+            )
+            . Html::endForm()
+            . '</li>';
+
+        if (Yii::$app->user->identity->isadmin){
+            $items[1]=['label' => 'Пользователи', 'url' => ['/admin/user/index']];
+            $items[3]=['label' => 'Меню', 'url' => ['/admin/menuitems/index']];
+            $items[5]=['label' => 'Залы', 'url' => ['/admin/lounge/index']];
+            $items[6]=['label' => 'Администратор', 'url' => ['/admin/administrator/index']];
+            $items[7]=['label' => 'Рекламщик', 'url' => ['/admin/advertiser/index']];
+            $items[8]=['label' => 'Модератор', 'url' => ['/admin/moderator/index']];
+            $items[9]=['label' => 'Сообщения', 'url' => ['/admin/messagere/index']];
+        }else if (Yii::$app->user->identity->ismoder){
+            $items[1]=['label' => 'Брони', 'url' => ['/admin/reservation/index']];
+            $items[2]=['label' => 'Подтверждение брони', 'url' => ['/site/confirmation']];
+        }
+        else if (Yii::$app->user->identity->isnews){
+            $items[1]=['label' => 'Новости', 'url' => ['/admin/news/index']];
+            $items[9]=['label' => 'Мои сообщения', 'url' => ['/admin/messageread/index']];
+        }
+    };
+
+
     NavBar::begin([
         'brandLabel' => Yii::$app->name,
         'brandUrl' => Yii::$app->homeUrl,
@@ -43,24 +75,7 @@ AppAsset::register($this);
     ]);
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Новости', 'url' => ['/admin/news/index']],
-            ['label' => 'Меню', 'url' => ['/admin/menuitems/index']],
-            ['label' => 'Залы', 'url' => ['/admin/lounge/index']],
-            ['label' => 'Брони', 'url' => ['/admin/reservation/index']],
-            Yii::$app->user->isGuest ? (
-            ['label' => '', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
-                . Html::submitButton(
-                    'Выйти (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
-        ],
+        'items' => $items,
     ]);
     NavBar::end();
     ?>
@@ -77,8 +92,6 @@ AppAsset::register($this);
 <footer class="footer">
     <div class="container">
         <p class="pull-left">&copy; KissKiss <?= date('Y') ?></p>
-
-        <p class="pull-right"><?= Yii::powered() ?></p>
     </div>
 </footer>
 

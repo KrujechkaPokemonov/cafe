@@ -29,6 +29,10 @@ use yii\widgets\ActiveForm;
 
     <?php // echo $form->field($model, 'person') ?>
 
+    <?php // echo $form->field($model, 'email') ?>
+
+    <?php // echo $form->field($model, 'id_booktable') ?>
+
     <?php // echo $form->field($model, 'status') ?>
 
     <div class="form-group">

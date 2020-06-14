@@ -17,8 +17,8 @@ class AdvertiserSearch extends Advertiser
     public function rules()
     {
         return [
-            [['id', 'id_administrator', 'id_news'], 'integer'],
-            [['name', 'email', 'password'], 'safe'],
+            [['id'], 'integer'],
+            [['name', 'email'], 'safe'],
         ];
     }
 
@@ -59,13 +59,10 @@ class AdvertiserSearch extends Advertiser
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'id_administrator' => $this->id_administrator,
-            'id_news' => $this->id_news,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'email', $this->email])
-            ->andFilterWhere(['like', 'password', $this->password]);
+            ->andFilterWhere(['like', 'email', $this->email]);
 
         return $dataProvider;
     }

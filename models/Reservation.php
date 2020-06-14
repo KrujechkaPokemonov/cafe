@@ -14,10 +14,12 @@ use Yii;
  * @property string $date
  * @property string $time
  * @property string $person
+ * @property string $email
+ * @property int $id_booktable
  * @property string $status
  *
- * @property Moderator[] $moderators
  * @property Lounge $lounge
+ * @property Booktable $booktable
  */
 class Reservation extends \yii\db\ActiveRecord
 {
@@ -35,12 +37,13 @@ class Reservation extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id_lounge', 'name', 'phone', 'date', 'time', 'person'], 'required'],
-            [['id_lounge'], 'integer'],
-            [['name', 'phone', 'date', 'time'], 'string', 'max' => 255],
+            [['id_lounge', 'name', 'phone', 'date', 'time', 'person', 'email', 'id_booktable'], 'required'],
+            [['id_lounge', 'id_booktable'], 'integer'],
+            [['name', 'phone', 'date', 'time', 'email'], 'string', 'max' => 255],
             [['person'], 'string', 'max' => 4],
             [['status'], 'string', 'max' => 50],
             [['id_lounge'], 'exist', 'skipOnError' => true, 'targetClass' => Lounge::className(), 'targetAttribute' => ['id_lounge' => 'id']],
+            [['id_booktable'], 'exist', 'skipOnError' => true, 'targetClass' => Booktable::className(), 'targetAttribute' => ['id_booktable' => 'id']],
         ];
     }
 
@@ -55,18 +58,12 @@ class Reservation extends \yii\db\ActiveRecord
             'name' => 'Имя',
             'phone' => 'Телефон',
             'date' => 'Дата бронирования',
-            'time' => 'Время бронирования',
+            'time' => 'Время',
             'person' => 'Кол-во персон',
+            'email' => 'E-mail',
+            'id_booktable' => 'Стол',
             'status' => 'Статус',
         ];
-    }
-
-    /**
-     * @return \yii\db\ActiveQuery
-     */
-    public function getModerators()
-    {
-        return $this->hasMany(Moderator::className(), ['id_reservation' => 'id']);
     }
 
     /**
@@ -75,5 +72,18 @@ class Reservation extends \yii\db\ActiveRecord
     public function getLounge()
     {
         return $this->hasOne(Lounge::className(), ['id' => 'id_lounge']);
+    }
+
+    /**
+     * @return \yii\db\ActiveQuery
+     */
+    public function getBooktable()
+    {
+        return $this->hasOne(Booktable::className(), ['id' => 'id_booktable']);
+    }
+
+    public function getStatus()
+    {
+        return $this->hasOne(Status::className(), ['id' => 'id_status']);
     }
 }

@@ -17,8 +17,8 @@ class AdministratorSearch extends Administrator
     public function rules()
     {
         return [
-            [['id', 'id_lounge', 'id_menu', 'id_food_and_drinks'], 'integer'],
-            [['name', 'email', 'password'], 'safe'],
+            [['id'], 'integer'],
+            [['name', 'email'], 'safe'],
         ];
     }
 
@@ -59,14 +59,10 @@ class AdministratorSearch extends Administrator
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'id_lounge' => $this->id_lounge,
-            'id_menu' => $this->id_menu,
-            'id_food_and_drinks' => $this->id_food_and_drinks,
         ]);
 
         $query->andFilterWhere(['like', 'name', $this->name])
-            ->andFilterWhere(['like', 'email', $this->email])
-            ->andFilterWhere(['like', 'password', $this->password]);
+            ->andFilterWhere(['like', 'email', $this->email]);
 
         return $dataProvider;
     }

@@ -5,8 +5,8 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Moderator */
 
-$this->title = 'Create Moderator';
-$this->params['breadcrumbs'][] = ['label' => 'Moderators', 'url' => ['index']];
+$this->title = 'Создать запись о пользователе';
+$this->params['breadcrumbs'][] = ['label' => 'Модераторы', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="moderator-create">
